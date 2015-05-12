@@ -1,0 +1,430 @@
+
+.main {
+  width:540px;
+  height:887px;
+  margin: 0 auto;
+  background: white;
+  padding: 15px;
+}
+
+body {
+  background: rgb(249,249,249);
+  font-family: helvetica;
+  font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  zoom: 0.65;
+}
+
+.text {
+  padding: 100px 0;
+  font-size: 40px;
+}
+
+.top-bar {
+  font-size: 15px;
+}
+
+.top-bar-battery {
+  background-image: url('/assets/img/batteryTopBar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top-bar-battery .space {
+  height: 5px;
+}
+
+.top-bar-battery .fill {
+}
+
+.top-bar-infusion {
+  background-image: url('/assets/img/infusionSiteTopBar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+}
+
+.top-bar-infusion .fill {
+}
+
+.top-bar-insulin .space {
+  padding-top: 22px;
+}
+
+.top-bar-insulin .fill {
+}
+
+.top-bar-insulin {
+  background-image: url('/assets/img/insulinTopBar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 3px;
+}
+
+.top-bar-glucagon .space {
+  padding-top: 22px;
+}
+
+.top-bar-glucagon .fill {
+}
+
+.top-bar-cgm {
+  background-image: url('/assets/img/cgmTopBar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  background-position-y: 9px;
+}
+
+.top-bar-glucagon {
+  background-image: url('/assets/img/glucagonTopBar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 3px;
+}
+
+
+.title-bar {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.title-bar-action-back {
+  cursor: pointer;
+}
+
+.entry {
+  padding: 10px 0;
+}
+.entry-fullscreen {
+  padding: 185px 10px;
+}
+.entry-erase {
+  padding-top: 25px;
+  font-size: 15px;
+  color: lightgray;
+}
+
+.entry-value {
+  text-align: center;
+  font-size: 40px;
+  height: 50px;
+}
+
+.keypad {
+  padding-bottom: 30px;
+}
+.keypad-row {
+  padding: 10px 0;
+}
+.keypad-key {
+  font-size: 25px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.keypad-key:hover {
+  color: white;
+  cursor: pointer;
+  background: black;
+}
+.keypad-key-hidden,
+.keypad-key-hidden:hover {
+  border: 1px solid transparent !important;
+  background: transparent;
+  cursor: default;
+}
+
+.confirm {
+  padding: 10px;
+  margin: 0 20px !important;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.confirm:hover {
+  color: white;
+  cursor: pointer;
+  background: black;
+}
+
+.disabled,
+.disabled:hover {
+  cursor: default;
+  color: lightgray;
+  border-color: lightgray;
+  background: transparent;
+}
+
+.hide {
+  display: none;
+}
+
+.box
+{
+	margin-top:20px;
+	margin-bottom:20px;
+	max-width:768px;
+	height:300px;
+
+	padding: 10px;
+	background-color: #EEE;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+
+	text-align:center;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 36px;
+
+	overflow:hidden;
+}
+
+
+.svg-label-axis-small, .svg-label-axis-bolus, .svg-label-axis-carb, .svg-label-axis-glucagon, .svg-label-axis-x {
+  font-size: 11px;
+}
+
+.menu-list > li {
+  float: left;
+  width: 100%;
+  height: 110px;
+  border-bottom: 3px solid #d0d1d0;
+  display: inline;
+  text-align: left;
+}
+
+.menu-list > li > a {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+  padding: 30px;
+  display: block;
+}
+
+.menu-list {
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.top-bar-back {
+  height: 66px;
+  text-decoration: none;
+  font-size: 30px;
+  color black;
+}
+
+.menu-top-bar {
+  height: 86px;
+}
+
+.home-time {
+  background: #cbcccb;
+  width: 100%;
+  color: #4d4e4c;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 20px;
+}
+
+.content {
+  background: #cbcccb;
+  width: 100%;
+  height: 580px;
+  border-radius: 10px;
+}
+
+.graph {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.amPm {
+  font-size: 10px;
+}
+
+.top-bar-item {
+  float: left;
+  width: 40px;
+  padding: 37px 34px;
+}
+
+.top-bar-itemGroup {
+  background-color: #d0d2d3;
+  height: 131px;
+  border-radius: 10px;
+  margin-left: 125px;
+  padding: 20px;
+}
+
+.top-bar-menu {
+  background-color: #d0d2d3;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-image: url('/assets/img/menuIcon.png');
+  width: 110px;
+  height: 131px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chartToggle {
+  float: left;
+background-image: url('/assets/img/36toggle.png');
+width: 123px;
+height: 67px;
+background-repeat: no-repeat;
+margin-left: 40px;
+/* padding-top: 59px; */
+background-position-y: 30px;
+background-size: 122px;
+}
+
+.sixThreeToggle {
+  background-image: url('/assets/img/63toggle.png');
+}
+.cgmCurrentUnit {
+  font-size: 17px;
+  color: #929497;
+  float: right;
+  padding-top: 49px;
+  font-weight: lighter;
+}
+
+.cgmCurrentValue {
+  font-size: 72px;
+  color: #929497;
+  float: right;
+  font-family: sans-serif;
+  padding-right: 42px;
+}
+
+.notifications {
+  height: 54px;
+  width: 100%;
+}
+
+svg {
+  padding-top: 55px;
+  padding-bottom: 72px;
+}
+
+.clear {
+  clear: both;
+}
+
+.bottom-bar-icon {
+  float: left;
+background-color: #d0d2d3;
+/* width: 415px; */
+height: 70px;
+color: #808184;
+font-size: 30px;
+font-weight: lighter;
+padding: 15px;
+}
+
+.bottom-carbs {
+  width: 415px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+padding-left: 222px;
+background: url('/assets/img/CarbsButtonIcon.png');
+background-color: #d0d2d3;
+background-repeat: no-repeat;
+background-position: 170px 15px;
+}
+
+.bottom-more {
+  width: 95px;
+border-left: solid white 3px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+background: url('/assets/img/moreButton.svg');
+background-color: #d0d2d3;
+background-repeat: no-repeat;
+background-position: 30px;
+}
+
+.bottom-gburst {
+  border-bottom-left-radius: 10px;
+  background: url('/assets/img/gburstIcon.png');
+  background-color: #d0d2d3;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-position: 35px;
+/* padding-left: 73px; */
+padding: 25px;
+padding-left: 71px;
+}
+
+.bottom-adjust {
+  border-left: solid white 3px;
+  background: url('/img/adjustTitleIcon.svg');
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 30px;
+  background-position: 35px;
+  background-size: 22px;
+/* padding-left: 73px; */
+padding: 25px;
+padding-left: 71px;
+}
+.bottom-bg {
+  border-left: solid white 3px;
+  border-bottom-right-radius: 10px;
+  background: url('/assets/img/bgIcon.png');
+  background-color: #d0d2d3;
+  background-repeat: no-repeat;
+  background-position: 30px;
+  background-position: 45px;
+  /* padding-left: 73px; */
+  padding: 25px;
+  padding-left: 71px;
+}
+
+.bottom-bar {
+  padding-top: 106px;
+}
+
+.bottom-bar-icon-expanded {
+  width: 170px;
+  font-size: 22px;
+}
+
+.bottom-bar-expanded {
+  padding-top: 3px;
+  display:none;
+}
+
+.bottom-bar-expand .bottom-bar-expanded {
+  display: block;
+}
+
+.bottom-bar-expand .bottom-carbs {
+  border-bottom-left-radius: 0px;
+}
+
+.bottom-bar-expand .bottom-more {
+  border-bottom-right-radius: 0px;
+}
+
+.bottom-bar-expand {
+  padding-top: 33px;
+}

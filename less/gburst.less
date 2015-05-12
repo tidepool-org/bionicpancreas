@@ -1,0 +1,96 @@
+@import "variables.less";
+
+.gburst {
+  padding: 30px;
+}
+
+ul li {
+  float: left;
+  width: 80px;
+  position: relative;
+}
+
+.bar-fill {
+  background: white;
+  width: 40px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-bottom: 10px !important;
+  position: absolute;
+  left: 20px;
+}
+
+.small {
+  .bar {
+    height: 80px;
+    margin-top: 160px;
+  }
+  .bar-fill {
+    height: 80px;
+    margin: -91px auto;
+  }
+}
+
+.medium {
+  .bar {
+    height: 160px;
+    margin-top: 80px;
+  }
+  .bar-fill {
+    height: 160px;
+    margin: -171px auto;
+  }
+}
+
+.large {
+  .bar {
+    height: 240px;
+    margin-top: 0px;
+  }
+  .bar-fill {
+    height: 240px;
+    margin: -251px auto;
+  }
+}
+
+
+.selected {
+    .bar {
+      background: @color-two;
+      border: 1px solid @color-two;
+    }
+    .bar-fill {
+      background: @color-one;
+    }
+
+    .text {
+      display: block;
+    }
+}
+
+.notSelected {
+  .bar, .bar-fill {
+    background: @color-three;
+    border: 1px solid @color-three;
+  }
+  .text {
+    display: none;
+  }
+}
+
+.bar {
+  background: @color-two;
+  width: 40px;
+  border-radius: 5px;
+  border: 1px solid @color-two;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+  color: @color-two;
+  font-size: 16px;
+  font-weight: 400;
+}

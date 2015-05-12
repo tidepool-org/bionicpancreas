@@ -1,0 +1,36 @@
+.svg-label-yaxis {
+  text-anchor: end;
+  fill: #666666;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.svg-tick {
+  stroke: #666666;
+  stroke-width: 1px;
+}
+
+.svg-line {
+  stroke: #666666;
+  stroke-width: 1px;
+}
+
+.svg-line-target {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.svg-icon-text {
+  text-anchor: middle;
+  fill: white;
+}
+
+.svg-icon {
+  fill: #666666;
+}
+
+.svg-pentagon {
+  fill: #666666;
+  stroke: #666666;
+  stroke-width:2;
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="92px" viewBox="0 0 24 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>cgmTitleIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="cgmTitleIcon" sketch:type="MSLayerGroup" transform="translate(-1.000000, 0.000000)" fill="#FFFFFF">
+            <path d="M24.279,26.17 C23.688,15.168 20.95,4.761 19.986,3.444 C19.019,2.132 17.012,0.735 12.861,0.735 C8.694,0.735 6.606,1.854 5.465,3.561 C4.592,4.877 2.097,16.122 1.281,27.376 C0.486,38.343 1.811,44.666 2.772,45.99 C3.739,47.297 8.894,47.218 13.047,47.218 C17.213,47.218 21.993,47.21 22.921,45.997 C23.844,44.79 24.867,37.16 24.279,26.17" id="Fill-1" sketch:type="MSShapeGroup"></path>
+            <path d="M13.661,54.335 L12.68,52.773 L11.693,54.335 C11.255,55.027 0.985,71.403 0.985,79.202 C0.985,85.056 5.083,91.277 12.675,91.277 C20.263,91.277 24.357,85.056 24.357,79.202 C24.357,71.405 14.1,55.027 13.661,54.335" id="Fill-2" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

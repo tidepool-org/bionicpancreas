@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>weightSmallIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M30.487,0 L5.189,0 C2.323,0 0,2.322 0,5.188 L0,30.486 C0,33.353 2.323,35.675 5.189,35.675 L30.487,35.675 C33.354,35.675 35.676,33.353 35.676,30.486 L35.676,5.188 C35.676,2.322 33.354,0 30.487,0 L30.487,0 Z M23.313,16.999 C23.313,17.014 23.061,16.798 22.932,16.704 C21.667,15.783 20.133,15.041 18.368,15.041 L17.832,10.801 L17.67,10.804 L17.151,15.041 C15.711,15.041 13.899,15.702 12.532,16.699 C12.382,16.806 12.223,16.902 12.097,17.035 C12.067,17.067 6.33,10.881 6.364,10.848 C6.45,10.767 6.541,10.694 6.631,10.618 C9.635,8.099 13.504,6.586 17.727,6.586 C21.92,6.586 25.764,8.082 28.756,10.566 C28.862,10.653 28.975,10.734 29.072,10.832 C29.148,10.911 23.313,16.95 23.313,16.999 L23.313,16.999 Z" id="weightSmallIcon" fill="#000000" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

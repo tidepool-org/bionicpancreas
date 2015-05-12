@@ -1,0 +1,95 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 104px 33px;
+  }
+  .image {
+    position: relative;
+    width: 258px;
+    height: 145px;
+    background: url('/img/units.png');
+    background-repeat: no-repeat;
+  }
+
+  .selection {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 72px;
+
+  }
+  .op {
+    position: absolute;
+    width: 28px;
+    height: 30px;
+  }
+  .one {
+    top: 0px;
+    left: 72px;
+  }
+  .two {
+    top: 0px;
+    left: 151px;
+  }
+
+
+  .selection1 {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 112px;
+    left: 72px;
+
+  }
+  .one1 {
+    top: 110px;
+    left: 72px;
+  }
+  .two1 {
+    top: 110px;
+    left: 151px;
+  }
+</style>
+<script>
+$(function() {
+  var moveSelection = function(x) {
+    $('.selection').css('left', x);
+  };
+
+  $('.one').click(function() {
+    moveSelection(72);
+  });
+  $('.two').click(function() {
+    moveSelection(151);
+  });
+
+  var moveSelection1 = function(x) {
+    $('.selection1').css('left', x);
+  };
+
+  $('.one1').click(function() {
+    moveSelection1(72);
+  });
+  $('.two1').click(function() {
+    moveSelection1(151);
+  });
+});
+</script>
+<div class='content'>
+  <div class='image'>
+    <div class='selection'></div>
+    <div class='one op'></div>
+    <div class='two op'></div>
+    <div class='selection1'></div>
+    <div class='one1 op'></div>
+    <div class='two1 op'></div>
+  </div>
+</div>

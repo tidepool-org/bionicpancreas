@@ -1,0 +1,16 @@
+.main {
+  padding: 40px;
+}
+
+body {
+  font-family: helvetica;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+a {
+  display: block;
+  padding: 10px 0;
+  font-size: 24px;
+  text-decoration: none;
+}

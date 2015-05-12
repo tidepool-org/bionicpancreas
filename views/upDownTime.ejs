@@ -1,0 +1,57 @@
+<style>
+  .time-value {
+    position: absolute;
+    top: 239px;
+    left: 31px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    width: 28px;
+    text-align: right;
+  }
+  .time-unit {
+    position: absolute;
+    top: 239px;
+    left: 66px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    width: 28px;
+    text-align: right;
+  }
+  .time-up {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 205px;
+    left: 29px;
+  }
+  .time-down {
+    width: 30px;
+    height: 30px;
+    top: 265px;
+    position: absolute;
+    left: 29px;
+  }
+</style>
+<script>
+$(function() {
+  $('.time-up').click(function() {
+    var val = parseInt($('.time-value').html());
+
+    val++;
+    $('.time-value').html(val);
+  });
+
+  $('.time-down').click(function() {
+    var val = parseInt($('.time-value').html());
+
+    val--;
+    $('.time-value').html(val);
+  });
+});
+</script>
+<div class='time-value'><%- startTimeValue %></div>
+<div class='time-unit'>minutes</div>
+<div class='time-up'></div>
+<div class='time-down'></div>

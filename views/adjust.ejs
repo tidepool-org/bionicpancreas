@@ -1,0 +1,73 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+<link rel="stylesheet" href="/css/adjust.css">
+
+<script>
+$(function() {
+  $('li').click(function() {
+    $('li').addClass('disabled');
+    $('li').find('.step-text-current').hide();
+    $('li').find('.step-text').show();
+    $(this).removeClass('disabled');
+    $(this).find('.step-text-current').show();
+    $(this).find('.step-text').hide();
+  });
+});
+</script>
+<div class='content'>
+  <div class='choose'>
+    <ul class='steps'>
+      <li class='s1'>
+        <div class='step-box'>
+          <div class='step-box-number'>a</div>
+          <div class='step-box-line'></div>
+          <div class='step-box-big'></div>
+          <div class='clear'></div>
+        </div>
+        <div class='step-text-current' style='display:block'>current</div>
+        <div class='step-text' style='display:none'>Last used 6 month ago<br>Avrg: 135 mg/dl</div>
+      </li>
+      <li class='s2 disabled'>
+        <div class='step-box'>
+          <div class='step-box-number'>b</div>
+          <div class='step-box-line'></div>
+          <div class='step-box-big'></div>
+          <div class='clear'></div>
+        </div>
+        <div class='step-text-current'>current</div>
+        <div class='step-text'>Last used 1 month ago<br>Avrg: 128 mg/dl</div>
+      </li>
+      <li class='s3 disabled'>
+        <div class='step-box'>
+          <div class='step-box-number'>c</div>
+          <div class='step-box-line'></div>
+          <div class='step-box-big'></div>
+          <div class='clear'></div>
+        </div>
+        <div class='step-text-current'>current</div>
+        <div class='step-text'>Last used 11 month ago<br>Avrg: 125 mg/dl</div>
+      </li>
+      <li class='s4 disabled'>
+        <div class='step-box'>
+          <div class='step-box-number'>d</div>
+          <div class='step-box-line'></div>
+          <div class='step-box-big'></div>
+          <div class='clear'></div>
+        </div>
+        <div class='step-text-current'>current</div>
+        <div class='step-text'>Last used 1 month ago<br>Avrg: 122 mg/dl</div>
+      </li>
+      <li class='s4 disabled'>
+        <div class='step-box'>
+          <div class='step-box-number'>e</div>
+          <div class='step-box-line'></div>
+          <div class='step-box-big'></div>
+          <div class='clear'></div>
+        </div>
+        <div class='step-text-current'>current</div>
+        <div class='step-text'>Last used 1 year ago<br>Avrg: 112 mg/dl</div>
+      </li>
+    </ul>
+  </div>
+</div>

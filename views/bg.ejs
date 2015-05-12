@@ -1,0 +1,232 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+<script>
+var computeEntryValue = function(val) {
+  var currentValue = $('.entry-value').html();
+
+  if (val == 'c') {
+    return '';
+  }
+  if (val == '&lt;') {
+    return currentValue.substring(0, currentValue.length - 1);
+  }
+
+  if (currentValue.length == 3) {
+    return currentValue;
+  }
+
+  if (!currentValue.length && (val == 0)) {
+    return '';
+  }
+
+  return currentValue + '' + val;
+};
+
+var keypress = function(d,el) {
+  var id = $(this).html();
+
+  var newBg = computeEntryValue(id);
+
+  if (newBg > 599) {
+    return;// $('.nums').addClass('disabled');
+  }
+
+  $('.entry-value').html(newBg);
+  $('.value-value').html(newBg);
+
+  var bg = $('.entry-value').html();
+
+  if (bg && bg > 20) {
+    $('.bottombar-title').removeClass('disabled');
+  } else {
+    $('.bottombar-title').addClass('disabled');
+  }
+  /*
+  if (bg && bg > 100) {
+    $('.nums').addClass('disabled');
+  } else {
+    $('.nums').removeClass('disabled');
+  }
+
+  if (!bg.length) {
+    $('#back,#0,#c').addClass('disabled');
+  } else if (bg && bg < 100) {
+    $('#back,#0,#c').removeClass('disabled');
+  }*/
+};
+var clearTime = false;
+var showEntry = function() {
+  $('.view').show()
+  $('.edit, .bottombar-roundertop, .bottombar').hide();
+  $('.topbar a').attr('href', 'javascript:showEdit()');
+  clearTime = true;
+  $('.filling-fill').css({height: 0});
+  $('.filling-text').html('preparing...');
+  setTimeout(function() {
+    $('.filling-text').html('entering BG...');
+    $('.filling-fill').animate({'height': 146 }, 10000, function() {
+      if(clearTime) {
+        window.location = '/?bg=' + $('.entry-value').html();
+      }
+    });
+  }, 2000);
+
+
+  $('.topbar-backIcon').removeClass('back');
+  $('.topbar-backIcon').addClass('close');
+  $('.topbar a').attr('href', 'javascript:showEdit()');
+};
+
+var showEdit = function() {
+  clearTime = false;
+  $('.edit').show();
+  $('.view').hide();
+  $('.bottombar-roundertop, .bottombar').show();
+  $('.topbar-backIcon').addClass('back');
+  $('.topbar-backIcon').removeClass('close');
+  $('.topbar a').attr('href', '/');
+};
+
+$(function() {
+  $('li').click(keypress);
+
+  $('.topbar a').attr('href', '/');
+});
+
+</script>
+<style>
+  .content {
+    padding: 30px 45px;
+  }
+  .image {
+    position: relative;
+    width: 225px;
+    height: 379px;
+    background: url('/img/bgKeypad.png');
+    background-repeat: no-repeat;
+  }
+  body {
+    color: white;
+  }
+  ul {
+
+  }
+  li {
+    width: 55px;
+height: 55px;
+border: 2px solid white;
+border-radius: 50px;
+float: left;
+text-align: center;
+vertical-align: middle;
+padding: -3px;
+font-size: 23px;
+font-weight: 400;
+margin: 6px;
+/* display: table-row-group; */
+line-height: 51px;
+  }
+  .empty {
+    border:none;
+  }
+  .entry {
+    width: 150px;
+background: white;
+height: 50px;
+margin: 0 auto;
+margin-bottom: 25px;
+border-radius: 5px;
+position: relative;
+color: black;
+  }
+  .entry-value {
+    font-size: 36px;
+float: right;
+padding-right: 7px;
+  }
+  .entry-unit {
+    position: absolute;
+color: black;
+font-weight: 400;
+font-size: 12px;
+top: 25px;
+left: 10px;
+  }
+
+  .filling-fill {
+    position: absolute;
+    width: 98px;
+    height: 0px;
+    background: white;
+    left: 107px;
+  }
+  .filling-image {
+    position: absolute;
+    background-image: url('/img/dropmask.svg');
+    width: 300px;
+    height: 320px;
+    z-index: 100;
+    background-repeat: no-repeat;
+    left: 106px;
+  }
+  .filling-text {
+    padding-top: 181px;
+   font-size: 20px;
+   text-align: center;
+   width: 227px;
+   border-bottom: 2px solid white;
+   padding-bottom: 40px;
+  }
+
+  .value {
+    text-align: center;
+    font-size: 65px;
+    padding-top: 30px;
+  }
+  .value-unit {
+    font-size: 12px;
+    padding-right: 5px;
+  }
+  .view {
+    display: none;
+  }
+</style>
+<div class='content'>
+  <div class='edit'>
+    <div class='entry'>
+      <div class='entry-value'></div>
+      <div class='entry-unit'>mg/dl</div>
+    </div>
+    <div class='keypad'>
+      <ul>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+      </ul>
+      <ul>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+      </ul>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <ul>
+        <li class='empty'></li>
+        <li>0</li>
+        <li><</li>
+      </ul>
+   </div>
+ </div>
+ <div class='view'>
+   <div class='filling-fill'></div>
+   <div class='filling-image'></div>
+   <div class='filling-text'>entering BG...</div>
+   <div class='value'><span class='value-unit'>mg/dl</span><span class='value-value'>123</span></div>
+ </div>
+</div>
+
+<% include bottombar %>

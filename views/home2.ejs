@@ -1,0 +1,221 @@
+<% layout('layout') -%>
+
+<link rel="stylesheet" href="/css/chart.css">
+<script src="/assets/js/d3.js"></script>
+<script src="/assets/js/underscore.js"></script>
+<script src="/assets/json/graph.json"></script>
+<script src="/assets/js/chart.js"></script>
+<script src="/js/home2.js"></script>
+
+<link rel="stylesheet" href="/css/topbar.css">
+
+<style>
+.homebar-menu {
+  width: 74px;
+  height: 81px;
+  background: black;
+  border-radius: 5px;
+  background-image: url('/img/hamburger.png');
+  background-repeat: no-repeat;
+  background-position: 20px;
+  float: left;
+}
+.main {
+  background: none;
+}
+li {
+  float: left;
+  padding: 14px 7px;
+}
+.homebar-status {
+  width: 245px;
+  background: black;
+  height: 81px;
+  border-radius: 5px;
+  margin-left: 83px;
+  padding: 0 5px;
+}
+
+.bottom-bar-icon {
+  float: left;
+background-color: black;
+/* width: 415px; */
+height: 27px;
+color: white;
+font-size: 21px;
+font-weight: lighter;
+padding: 10px;
+}
+
+.bottom-carbs {
+  width: 125px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+padding-left: 135px;
+background: url('/img/carbWhite.svg');
+background-color: black;
+background-repeat: no-repeat;
+background-position: 104px 14px;
+background-size: 21px;
+}
+
+.bottom-more {
+  width: 45px;
+border-left: solid white 3px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+background: url('/img/moreButton.svg');
+background-color: black;
+background-repeat: no-repeat;
+background-position: 23px;
+background-size: 20px;
+}
+
+.bottom-gburst {
+  border-bottom-left-radius: 5px;
+  background: url('/img/gburstTitleIcon.svg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  background-position: 23px;
+  /* padding-left: 73px; */
+  padding: 24px;
+  padding-left: 47px;
+  background-size: 19px;
+  height: 0;
+  padding-top: 15px;
+padding-bottom: 33px;
+  padding-right: 14px;
+  background-size: 9px;
+background-position-x: 28px;
+}
+
+.bottom-adjust {
+  border-left: solid white 3px;
+  background: url('/img/adjustTitleIcon.svg');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: 30px;
+  background-position: 15px;
+  background-size: 22px;
+  /* padding-left: 73px; */
+  padding: 12px 25px;
+  padding-left: 45px;
+  padding-bottom: 9px;
+  padding-right: 13px;
+  padding-top: 15px;
+  padding-bottom: 6px;
+}
+.bottom-bg {
+  border-left: solid white 3px;
+    border-bottom-right-radius: 5px;
+    background: url('/img/bgTitleIcon.svg');
+    background-size: 14px;
+    background-position-x: 30px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 30px;
+    background-position: 31px;
+    /* padding-left: 73px; */
+    padding: 11px 12px;
+    padding-left: 53px;
+    padding-top: 15px;
+    padding-bottom: 6px;
+    padding-right: 4px;
+}
+
+.bottom-bar {
+  top: 533px;
+  position: absolute;
+}
+
+.bottom-bar-icon-expanded {
+  width: 52px;
+font-size: 15px;
+}
+
+.bottom-bar-expanded {
+  padding-top: 3px;
+  display:none;
+}
+
+.bottom-bar-expand .bottom-bar-expanded {
+  display: block;
+}
+
+.bottom-bar-expand .bottom-carbs {
+  border-bottom-left-radius: 0px;
+}
+
+.bottom-bar-expand .bottom-more {
+  border-bottom-right-radius: 0px;
+  background-image: url('/img/downArrow.svg');
+}
+
+.bottom-bar-expand {
+  top: 482px;
+}
+.graph {
+  padding-top: 121px;
+}
+body {
+}
+.main {
+  background: white;
+}
+.toggle {
+  position: absolute;
+  top: 155px;
+  left: 26px;
+  width: 86px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+.toggle6 {
+  background-image: url('/img/6toggle.svg');
+}
+.toggle12 {
+  background-image: url('/img/12toggle.svg');
+}
+.currentCGM {
+  color: black !important;
+  padding-top: 40px;
+}
+.toggle.shrink {
+  top: 130px !important;
+}
+.currentCGM.shrink {
+  padding-top: 20px !important;
+}
+.graph.shrink {
+  padding-top: 20px !important;
+}
+
+</style>
+<div class='homebar'>
+  <a href='/menu'><div class='homebar-menu'></div></a>
+  <a href='/status'><div class='homebar-status'>
+    <ul>
+      <li><% include insulinIcon %></li>
+      <li><% include glucagonIcon %></li>
+      <li><% include cgmIcon %></li>
+      <li><% include infusionSetIcon %></li>
+      <li><% include batteryIcon %></li>
+    </ul>
+  </div></a>
+  <div class='center'>
+    <div class='toggle toggle6'></div>
+    <% include currentCGM -%>
+    <div class="graph"></div>
+  </div>
+  <div class='bottom-bar'>
+    <a href='/carb'><div class='bottom-bar-icon bottom-carbs'>Carbs</div></a>
+    <div class='bottom-bar-icon bottom-more'></div>
+    <div class='clear'></div>
+    <div class='bottom-bar-expanded'>
+      <a href='/gburst'><div class='bottom-bar-icon bottom-bar-icon-expanded bottom-gburst'>G burst</div></a>
+      <a href='/adjust'><div class='bottom-bar-icon bottom-bar-icon-expanded bottom-adjust'>Adjust</div></a>
+      <a href='/bg'><div class='bottom-bar-icon bottom-bar-icon-expanded bottom-bg'>BG</div></a>
+    </div>
+  </div>
+</div>

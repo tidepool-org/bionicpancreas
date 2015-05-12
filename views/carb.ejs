@@ -1,0 +1,211 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<link rel="stylesheet" href="/css/carb.css">
+
+<script>
+var choosen = '.typical';
+var choosenTime;
+var clear = function() {
+  $('.cSize li').addClass('enabled');
+  $(choosen).removeClass('enabled');
+  $(choosen).addClass('selected');
+}
+$(function() {
+  $('.cBegining').click(function() {
+    choosenTime = 'cBegining';
+    $('.cWheel').css('background','url("/img/carbBegining.svg")');
+    clear();
+    $('.bottombar-title').removeClass('disabled');
+    $('.cMessage').html('How many carbs are you having?');
+  });
+  $('.cMiddle').click(function() {
+    choosenTime = 'cMiddle';
+    $('.cWheel').css('background','url("/img/carbMiddle.svg")');
+    clear();
+    $('.bottombar-title').removeClass('disabled');
+    $('.cMessage').html('How many carbs are you having?');
+  });
+  $('.cEnd').click(function() {
+    choosenTime = 'cEnd';
+    $('.cWheel').css('background','url("/img/carbEnd.svg")');
+    clear();
+    $('.bottombar-title').removeClass('disabled');
+    $('.cMessage').html('How many carbs are you having?');
+  });
+
+  $('.tiny').click(function() {
+    if (!choosenTime) {
+      return;
+    }
+    $('.cSize li').addClass('enabled');
+    $(this).removeClass('enabled');
+    $(this).addClass('selected');
+    choosen = '.tiny';
+  });
+  $('.small').click(function() {
+    if (!choosenTime) {
+      return;
+    }
+    $('.cSize li').addClass('enabled');
+    $(this).removeClass('enabled');
+    $(this).addClass('selected');
+    choosen = '.small';
+  });
+  $('.typical').click(function() {
+    if (!choosenTime) {
+      return;
+    }
+    $('.cSize li').addClass('enabled');
+    $(this).removeClass('enabled');
+    $(this).addClass('selected');
+    choosen = '.typical';
+  });
+  $('.large').click(function() {
+    if (!choosenTime) {
+      return;
+    }
+    $('.cSize li').addClass('enabled');
+    $(this).removeClass('enabled');
+    $(this).addClass('selected');
+    choosen = '.large';
+  });
+  $('.huge').click(function() {
+    if (!choosenTime) {
+      return;
+    }
+    $('.cSize li').addClass('enabled');
+    $(this).removeClass('enabled');
+    $(this).addClass('selected');
+    choosen = '.huge';
+  });
+});
+
+var deliver = function() {
+  if (!choosenTime) {
+    return;
+  }
+  $('.edit').hide();
+  $('.view').show();
+  $('.bottombar-roundedTop').hide();
+  $('.bottombar').hide();
+
+  $('.topbar-backIcon').toggleClass('close');
+
+  var classMap = {
+    '.tiny': 0,
+    '.small': 1,
+    '.ntypical': 2,
+    '.large': 3,
+    '.huge': 4
+  };
+
+  var cssSizeMap = {
+    '.tiny': {
+
+    },
+    '.small': {
+
+    },
+    '.typical': {
+      'background-position-x': '16px !important',
+      'background-size': '28px !important',
+      'background-position-y': '26px !important'
+    },
+    '.large': {
+
+    },
+    '.huge': {
+
+    }
+  };
+
+
+  var cssTimeMap = {
+    'cBegining': {
+      background: "url('/img/carbBeginingSelected.svg')",
+      width: 80,
+      height: 46,
+      'background-size': 80
+    },
+    'cMiddle': {
+      background: "url('/img/carbMiddleSelected.svg')",
+      width: 90,
+      height: 40,
+      'background-size': '90px'
+    },
+    'cEnd': {
+      background: "url('/img/carbEndSelected.svg')",
+      width: 80,
+      height: 48,
+      'background-size': 80
+    }
+  };
+
+  $('.view-selection-time').css(cssTimeMap[choosenTime]);
+
+  if (choosen == '.typical') {
+    choosen = '.ntypical';
+
+    $('.view-selection-size').html(choosen.substring(2));
+  } else {
+    $('.view-selection-size').html(choosen.substring(1));
+  }
+
+  $('.view-selection-size').addClass(choosen.substring(1));
+
+
+  $('.view-progress-text').html('preparing...');
+
+  setTimeout(function() {
+    $('.view-progress-text').html('Delivering...');
+
+    $('.view-progress-bar-fill').animate({height: 0}, 10000, function() {
+      window.location = '/?carbs=' + classMap[choosen];
+    });
+
+  }, 2000);
+
+
+}
+
+var edit = function() {
+  $('.view').hide();
+  $('.edit').show();
+
+  $('.topbar-backIcon').toggleClass('close');
+};
+
+</script>
+
+<div class='content'>
+  <div class='edit'>
+    <div class='cMessage'>Where in your day are you?</div>
+    <div class='cWheel'>
+      <div class='cBegining'></div>
+      <div class='cMiddle'></div>
+      <div class='cEnd'></div>
+    </div>
+    <div class='cSize'>
+      <ul>
+        <li class='tiny'><span>tiny<br>for me</span></li>
+        <li class='small'><span>small<br>for me</span></li>
+        <li class='typical'><span>typical<br>for me</span></li>
+        <li class='large'><span>large<br>for me</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class='view'>
+    <div class='view-progress-bar'>
+      <div class='view-progress-bar-fill'></div>
+    </div>
+    <div class='view-selection'>
+      <div class='view-selection-time'></div>
+      <div class='view-selection-size'></div>
+    </div>
+    <div class='view-progress-text progress'>Delivering...</div>
+  </div>
+</div>
+
+<% include bottombar %>

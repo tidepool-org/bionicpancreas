@@ -1,0 +1,33 @@
+<style>
+.batteryIcon {
+  background-image: url('/img/batteryIcon.svg');
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 53px;
+  position: relative;
+  background-position-x: 10px;
+}
+.battery-level {
+  position: absolute;
+  width: 13px;
+  height: 46px;
+  background: white;
+  left: 11px;
+  top: 4px;
+  border-radius: 0px;
+}
+.battery-alert {
+  position: absolute;
+  background-image: url('/img/alertIcon.svg');
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  top: 24px;
+  background-size: 22px;
+  left: 12px;
+}
+</style>
+<div class='batteryIcon icon'>
+  <div class='battery-level'></div>
+  <div class='battery-alert'></div>
+</div>

@@ -1,0 +1,70 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 120px 55px;
+  }
+  .levels {
+    position: relative;
+    width: 197px;
+    height: 29px;
+    background: url('/img/lock.png');
+    background-repeat: no-repeat;
+  }
+  .selection {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 48px;
+
+  }
+  .op {
+    position: absolute;
+    width: 28px;
+    height: 30px;
+  }
+  .one {
+    top: 0px;
+    left: 48px;
+  }
+  .two {
+    top: 0px;
+    left: 129px;
+  }
+  .message {
+    font-size: 14px;
+    font-weight: 400;
+    width: 210px;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 20px;
+  }
+</style>
+<script>
+$(function() {
+  var moveSelection = function(x) {
+    $('.selection').css('left', x);
+  };
+
+  $('.one').click(function() {
+    moveSelection(48);
+  });
+  $('.two').click(function() {
+    moveSelection(129);
+  });
+});
+</script>
+<div class='content'>
+  <div class='levels'>
+    <div class='selection'></div>
+    <div class='one op'></div>
+    <div class='two op'></div>
+    <div class='three op'></div>
+  </div>
+  <div class='message'>This requires a simple sequence of button presses in order to impact therapy</div>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="35px" height="63px" viewBox="0 0 35 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>highAlertTitleIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="highAlertTitleIcon" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
+            <path d="M21.764,24.274 C17.091,24.274 14.812,20.461 14.812,17.072 C14.812,12.087 21.764,1.071 21.764,1.071 C21.764,1.071 28.703,12.087 28.703,17.072 C28.703,20.461 26.428,24.274 21.764,24.274" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M0.4,0.893 L0.4,60.59 M4.89,61.291 L32.419,61.291 M0.409,46.199 L7.048,46.199 M0.409,31.111 L7.048,31.111 M0.409,16.022 L7.048,16.022 M0.409,0.933 L7.048,0.933 M0.283,61.291 L32.419,61.291 M0.409,46.199 L7.048,46.199 M0.409,31.111 L7.048,31.111 M0.409,16.022 L7.048,16.022 M0.409,0.933 L7.048,0.933" id="Stroke-2" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

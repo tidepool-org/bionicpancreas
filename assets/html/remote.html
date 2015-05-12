@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/assets/css/remote.css">
+  <link rel="stylesheet" href="/assets/css/simplegrid.css">
+  <link rel="stylesheet" href="/assets/css/jquery.nouislider.css">
+
+  <script src="/js/lib/jquery.js"></script>
+  <script src="/js/lib/underscore.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="/assets/js/remote.js"></script>
+  <script src="/assets/js/jquery.nouislider.all.min.js"></script>
+
+  <meta charset="utf-8">
+
+  <title>Bionic Pancreas Remote</title>
+</head>
+<body>
+  <div class='main'>
+    <h1>Bionic Pancreas Remote</h1>
+    <h1>Levels</h1>
+
+    <h2>Insulin</h2>
+    <div class='insulin-slider'></div>
+
+    <h2>Glucagon</h2>
+    <div class='glucagon-slider'></div>
+
+    <h2>CGM life</h2>
+    <div class='cgm-slider'></div>
+    <h2>CGM transmitter battery low</h2>
+    <div class='cgmTransmitterBatteryLow-slider'></div>
+    <h2>CGM offline</h2>
+    <div class='cgmOffline-slider'></div>
+    <h2>Calibration</h2>
+    <div class='calibration-slider'></div>
+
+    <h2>Insfusion</h2>
+    <div class='infusion-slider'></div>
+    <h2>Occlusion</h2>
+    <div class='oclusion-slider'></div>
+
+    <h2>Battery</h2>
+    <div class='battery-slider'></div>
+
+    <h2>Lock</h2>
+    <div class='lock-slider'></div>
+
+    <h1>Screens</h1>
+
+    <a href='javascript:updateScreen("/")'>Home</a>
+    <a href='javascript:updateScreen("/splash")'>Splash Page</a>
+    <a href='javascript:updateScreen("/lock")'>Lock Screen</a>
+    <a href='javascript:updateScreen("/locktest")'>Child lock</a>
+  </div>
+</body>
+</html>

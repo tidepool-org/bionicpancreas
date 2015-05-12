@@ -1,0 +1,42 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .progress-bar {
+    width: 50px;
+    height: 200px;
+    border: 1px solid white;
+    background: white;
+    margin: 0 auto;
+    margin-top: 58px;
+    border-radius: 5px;
+  }
+  .progress-bar-fill {
+    width: 50px;
+    height: 199px;
+    background: black;
+    margin-top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .progress {
+    width: 312px;
+    position: absolute;
+    padding-top: 130px;
+  }
+  .content {
+    width: 310px;
+  }
+</style>
+<script>
+$(function() {
+  $('.progress-bar-fill').animate({height: 0}, 5000, function() {
+    window.location = '/';
+  });
+});
+</script>
+<div class='content'>
+  <div class='progress-bar'><div class='progress-bar-fill'></div></div>
+  <div class='progress'>Delivering...</div>
+</div>

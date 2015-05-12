@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="7px" viewBox="0 0 32 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>moreButton</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="moreButton" sketch:type="MSLayerGroup" fill="#FFFFFF">
+            <circle id="Oval-2" sketch:type="MSShapeGroup" cx="3.5" cy="3.5" r="3.5"></circle>
+            <circle id="Oval-2-Copy" sketch:type="MSShapeGroup" cx="16.5" cy="3.5" r="3.5"></circle>
+            <circle id="Oval-2-Copy-2" sketch:type="MSShapeGroup" cx="28.5" cy="3.5" r="3.5"></circle>
+        </g>
+    </g>
+</svg>

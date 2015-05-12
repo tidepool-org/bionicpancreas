@@ -1,0 +1,90 @@
+@import "variables.less";
+
+body {
+  background: blue;
+  background: @color-two;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: @color-two;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 4px;
+}
+
+.main {
+  width: 338px;
+  height: 570px;
+  background: @color-one;
+  background-image: url('/img/backBackground.png');
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.content {
+  position: absolute;
+  top: 110px;
+  left: 25px;
+}
+
+.circleButton {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 100px;
+  background: @color-two;
+  color: @color-one;
+  top: 150px;
+  left: 65px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */
+
+  > div {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    height: 175px;
+    width: 175px;
+    display: table-cell;
+  }
+}
+
+.diamondButton {
+  background: url('/img/diamond.svg');
+  background-color: black;
+  border-radius: 0;
+  background-size: 176px;
+  background-repeat: no-repeat;
+}
+
+.progress {
+  text-align: center;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.circleInstructions {
+  font-weight: 400;
+  width: 188px;
+  text-align: center;
+  padding-left: 60px;
+  font-size: 15px;
+  padding-top: 51px;
+}
+
+.clear {
+  clear: both;
+}

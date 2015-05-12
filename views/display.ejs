@@ -1,0 +1,69 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 120px 36px;
+  }
+  .levels {
+    position: relative;
+    width: 224px;
+    height: 104px;
+    background: url('/img/fonts.png');
+    background-repeat: no-repeat;
+  }
+  .selection {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 37px;
+  }
+  .op {
+    position: absolute;
+    width: 28px;
+    height: 30px;
+  }
+  .one {
+    left: 0px;
+    top: 37px;
+  }
+  .two {
+    left: 101px;
+    top: 37px;
+  }
+  .three {
+    left:196px;
+    top: 37px;
+  }
+  .four {
+    left: 214px;
+  }
+</style>
+<script>
+$(function() {
+  var moveSelection = function(x) {
+    $('.selection').css('left', x);
+  };
+
+  $('.one').click(function() {
+    moveSelection(1);
+  });
+  $('.two').click(function() {
+    moveSelection(101);
+  });
+  $('.three').click(function() {
+    moveSelection(196);
+  });
+});
+</script>
+<div class='content'>
+  <div class='levels'>
+    <div class='selection'></div>
+    <div class='one op'></div>
+    <div class='two op'></div>
+    <div class='three op'></div>
+  </div>
+</div>

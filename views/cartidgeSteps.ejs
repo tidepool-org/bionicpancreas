@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/css/cartidgeSteps.css">
+<script>
+$(function() {
+  var next = '.s1';
+
+  $('.s1').click(function() {
+    $('.s1').removeClass('done');
+    $('.s1').addClass('working');
+    $('.s1 .step-text').html('rewinding pump...');
+
+    setTimeout(function() {
+      $('.s1').removeClass('working');
+      $('.s1').addClass('done');
+
+      $('.s1 .step-text').html('rewind pump');
+
+      $('.s2').removeClass('disabled');
+      next = '.s2';
+    }, 1000);
+  });
+
+  $('.s2').click(function() {
+    if(next != '.s2') {
+      return;
+    }
+    next = '.s3';
+    $('.s2').addClass('done');
+    $('.s3').removeClass('disabled');
+  });
+
+  $('.s3').click(function() {
+    if(next != '.s3') {
+      return;
+    }
+    next = '.s4';
+    $('.s3').addClass('done');
+
+    $('.s4').removeClass('disabled');
+
+    $('.s3').mousedown(function() {
+      $('.s3').removeClass('done');
+    });
+    $('.s3').mouseup(function() {
+      $('.s3').addClass('done');
+    });
+  });
+
+  $('.s4').click(function() {
+    if(next != '.s4') {
+      return;
+    }
+    $('.s4').addClass('done');
+    $('.bottombar-title').removeClass('disabled');
+
+  });
+
+});
+</script>
+<ul class='steps'>
+  <li class='s1'>
+    <div class='step-box'>
+      <div class='step-box-number'>1</div>
+      <div class='step-box-line'></div>
+      <div class='step-box-big'></div>
+      <div class='clear'></div>
+    </div>
+    <div class='step-text'>rewind pump</div>
+  </li>
+  <li class='s2 disabled'>
+    <div class='step-box'>
+      <div class='step-box-number'>2</div>
+      <div class='step-box-line'></div>
+      <div class='step-box-big'></div>
+      <div class='clear'></div>
+    </div>
+    <div class='step-text' style="margin-top: -28px;">connect tubing to cartridge and insert new cartridge.<br>Dont connect to body.</div>
+  </li>
+  <li class='s3 disabled'>
+    <div class='step-box'>
+      <div class='step-box-number'>3</div>
+      <div class='step-box-line'></div>
+      <div class='step-box-big'><div class='step-box-inner'></div></div>
+      <div class='clear'></div>
+    </div>
+    <div class='step-text' style="margin-top: -16px;">press and hold until you see drops at end of tubing</div>
+  </li>
+  <li class='s4 disabled'>
+    <div class='step-box'>
+      <div class='step-box-number'>4</div>
+      <div class='step-box-line'></div>
+      <div class='step-box-big'></div>
+      <div class='clear'></div>
+    </div>
+    <div class='step-text' style="margin-top: -12px;">reconnect tubing to body</div>
+  </li>
+</ul>

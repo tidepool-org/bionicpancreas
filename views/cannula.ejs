@@ -1,0 +1,68 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .amount {
+    color: gray;
+  font-size: 16px;
+  }
+  .value2 {
+    font-size: 51px;
+color: white;
+padding-left: 15px;
+  }
+  .value {
+    font-size: 51px;
+color: white;
+padding: 10px;
+
+padding-left: 0px;
+  }
+  .plus {
+    float: left;
+background: url('/img/plus.png');
+width: 58px;
+height: 58px;
+padding: 10px;
+background-repeat: no-repeat;
+margin-top: 10px;
+
+  }
+  .minus {
+    float: left;
+  background: url('/img/minus.png');
+  width: 58px;
+  height: 58px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+  }
+  .content {
+    padding: 85px;
+  }
+</style>
+<script>
+$(function() {
+  $('.plus').click(function() {
+    var val = parseInt($('.value').html()) + 1;
+    console.log(val)
+    if (val <10) {
+      console.log(val);
+      $('.value').html(val);
+    }
+  });
+  $('.minus').click(function() {
+    var val = parseInt($('.value').html()) - 1;
+
+    if (val > 5) {
+      $('.value').html(val);
+    }
+  });
+});
+</script>
+<div class='content'>
+  <div class='amount'><span class='value2'>0.</span><span class='value'>6</span>mm</div>
+  <div class='plus'></div>
+  <div class='minus'></div>
+</div>

@@ -1,0 +1,159 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 36px 84px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .plus {
+    float: left;
+    background: url('/img/plus.png');
+    width: 58px;
+    height: 58px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+  .minus {
+    float: left;
+    background: url('/img/minus.png');
+    width: 58px;
+    height: 58px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+  .amount {
+    color: gray;
+    font-size: 16px;
+  }
+  .value {
+    font-size: 51px;
+    color: white;
+    padding: 10px;
+    padding-left: 0px;
+  }
+  .content {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .weight-last {
+    border-bottom: 2px solid white;
+    padding-bottom: 28px;
+  }
+  .weight-remind {
+    border-top: 2px solid white;
+    margin-top: 90px;
+    padding-top: 20px;
+  }
+  .weight-edit {
+    padding-top: 38px;
+  }
+  .weight-last-value {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .weight-last-content {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .edit {
+    display: none;
+  }
+  .ago {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .view {
+    padding-top: 60px;
+  }
+</style>
+<script>
+$(function() {
+  view();
+});
+
+var view = function() {
+  var value = $('.edit .value').html();
+
+  $('.view .value').html(value);
+  $('.ago').html('1 second ago');
+
+  $('.view').show();
+  $('.edit').hide();
+  $('.bottombar-title').html('update');
+  $('.bottombar a').attr('href','javascript:edit()');
+};
+
+var edit = function() {
+  var value = $('.view .value').html();
+
+  $('.edit .value').html(value);
+  $('.view').hide();
+  $('.edit').show();
+
+
+  $('.plus').on({
+    mousedown : function () {
+      var el = $('.value');
+
+      el.html(parseInt(el.html(), 10) + 1);
+      intervalMax = window.setInterval(function(){
+        el.html(parseInt(el.html(), 10) + 1);
+      }, 200);
+    },
+    mouseup : function () {
+      window.clearInterval(intervalMax);
+    }
+  });
+
+  $('.minus').on({
+    mousedown : function () {
+      var el = $('.value');
+
+      el.html(parseInt(el.html(), 10) - 1);
+      intervalMin = window.setInterval(function(){
+        var val = parseInt(el.html(), 10);
+
+        if(val == 1) {
+          return;
+        }
+        el.html(val - 1);
+      }, 200);
+    },
+    mouseup : function () {
+      window.clearInterval(intervalMin);
+    }
+  });
+
+  $('.bottombar-title').html('save');
+  $('.bottombar a').attr('href','javascript:view()');
+};
+</script>
+<div class='content'>
+  <div class='edit'>
+    <div class='weight-last'>
+      <div class='weight-last-title'>Update your weight</div>
+      <div class='weight-last-content'><span class='weight-last-value'>120</span> lbs 25 days ago</div>
+    </div>
+    <div class='weight-edit'>
+      <div class='today'>today</div>
+      <div class='amount'><span class='value'>120</span>lbs</div>
+      <div class='minus'></div>
+      <div class='plus'></div>
+    </div>
+    <div class='weight-remind'>
+      <div class='weight-last-title'><a href='/weight/remind'>reminder</a></div>
+    </div>
+  </div>
+  <div class='view'>
+    <div class='amount'><span class='value'>120</span>lbs</div>
+    <div class='ago'>4 months ago</div>
+  </div>
+</div>
+
+<% include bottombar %>

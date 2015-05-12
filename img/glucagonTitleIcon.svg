@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="44px" viewBox="0 0 51 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>glucagonTitleIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M36.544,0 L12.986,0 C0.957,0 0,7.583 0,12.357 L0,43.356 L50.291,43.356 L50.291,12.357 C50.291,7.583 50.675,0 36.544,0 L36.544,0 Z M35.864,29.962 C35.864,30.803 35.444,31.556 34.71,32.028 C32.921,33.361 29.902,34.976 25.892,34.976 C18.528,34.976 13.388,29.787 13.388,22.354 C13.388,15.161 18.815,9.581 25.743,9.581 C29.036,9.581 31.523,10.365 34.058,12.203 C34.588,12.65 34.85,13.173 34.85,13.743 C34.85,15.196 33.119,16.313 31.755,15.163 C30.372,14.139 28.648,13.169 25.626,13.169 C20.945,13.169 17.28,17.145 17.28,22.222 C17.28,27.773 20.782,31.463 25.995,31.463 C28.189,31.463 30.532,30.68 32.188,29.406 L32.188,24.42 L26.464,24.42 C25.494,24.42 24.702,23.639 24.702,22.674 C24.702,21.696 25.494,20.9 26.464,20.9 L34.012,20.9 C35.032,20.9 35.864,21.762 35.864,22.82 L35.864,29.962 L35.864,29.962 Z" id="glucagonTitleIcon" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

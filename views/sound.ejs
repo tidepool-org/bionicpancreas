@@ -1,0 +1,67 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 120px 36px;
+  }
+  .levels {
+    position: relative;
+    width: 249px;
+    height: 72px;
+    background: url('/img/soundLevels.png');
+    background-repeat: no-repeat;
+  }
+  .selection {
+    width: 28px;
+    height: 28px;
+    background: white;
+    border-radius: 20px;
+    position: absolute;
+    left: 1px;
+  }
+  .op {
+    position: absolute;
+    width: 28px;
+    height: 30px;
+  }
+  .two {
+    left: 72px;
+  }
+  .three {
+    left:142px;
+  }
+  .four {
+    left: 214px;
+  }
+</style>
+<script>
+$(function() {
+  var moveSelection = function(x) {
+    $('.selection').css('left', x);
+  };
+
+  $('.one').click(function() {
+    moveSelection(1);
+  });
+  $('.two').click(function() {
+    moveSelection(72);
+  });
+  $('.three').click(function() {
+    moveSelection(142);
+  });
+  $('.four').click(function() {
+    moveSelection(214);
+  });
+});
+</script>
+<div class='content'>
+  <div class='levels'>
+    <div class='selection'></div>
+    <div class='one op'></div>
+    <div class='two op'></div>
+    <div class='three op'></div>
+    <div class='four op'></div>
+  </div>
+</div>

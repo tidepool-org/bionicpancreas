@@ -1,0 +1,74 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 0px 20px;
+  }
+  .image {
+    position: relative;
+    width: 273px;
+    height: 402px;
+    background: url('/img/status.png');
+    background-repeat: no-repeat;
+  }
+  li {
+    height: 70px;
+    padding: 10px 0;
+    width: 273px;
+    border-bottom: 2px solid gray;
+  }
+
+  li:last-child {
+    border-bottom: 0px;
+  }
+  .icon {
+    margin: 9px;
+    float: left;
+    margin-right: 30px;
+  }
+  .status-title {
+    font-size: 20px;
+    padding-top: 2px;
+  }
+  .status-subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+</style>
+<div class='content'>
+  <ul>
+    <li class='insulin'>
+      <% include insulinIcon %>
+      <div class='status-title'>Insulin</div>
+      <div class='status-subtitle line1'></div>
+      <div class='status-subtitle line2'></div>
+    </li>
+    <li class='glucagon'>
+      <% include glucagonIcon %>
+      <div class='status-title'>Glucagon</div>
+      <div class='status-subtitle line1'></div>
+      <div class='status-subtitle line2'></div>
+    </li>
+    <li class='cgm'>
+      <% include cgmIcon %>
+      <div class='status-title'>CGM</div>
+      <div class='status-subtitle line1'></div>
+      <div class='status-subtitle line2'></div>
+    </li>
+    <li class='infusion'>
+      <% include infusionSetIcon %>
+      <div class='status-title'>Infusion Set</div>
+      <div class='status-subtitle line1'></div>
+      <div class='status-subtitle line2'></div>
+    </li>
+    <li class='battery'>
+      <% include batteryIcon %>
+      <div class='status-title'>Battery</div>
+      <div class='status-subtitle line1'></div>
+      <div class='status-subtitle line2'></div>
+    </li>
+  </ul>
+</div>

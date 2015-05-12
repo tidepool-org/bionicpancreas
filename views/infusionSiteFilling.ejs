@@ -1,0 +1,49 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    background: url('/img/filling.svg');
+    width: 338px;
+    left: initial;
+    height: 233px;
+    top: 170px;
+    background-size: 338px;
+    background-repeat: no-repeat;
+  }
+  .filling-bars > div {
+    width: 9px;
+    height: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #A6A8AB;
+    position: absolute;
+    top: 281px;
+  }
+  .one {
+    left: 177px;
+    z-index: 2;
+  }
+  .two {
+    left: 189px;
+    z-index: 2;
+  }
+</style>
+<script>
+$(function() {
+  $('.topbar-backIcon').removeClass('back');
+  $('.topbar-backIcon').addClass('close');
+
+  $('.filling-bars > div').animate({height: 70}, 3000, function() {
+    window.location = '/';
+  });
+});
+</script>
+<div class='filling-bars'>
+  <div class='one'></div>
+  <div class='two'></div>
+</div>
+<div class='content'>
+  <div class='progress'>Filling...</div>
+</div>

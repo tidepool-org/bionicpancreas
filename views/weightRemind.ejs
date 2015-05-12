@@ -1,0 +1,72 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 15px 13px;
+  }
+  .image {
+    position: relative;
+    width: 289px;
+    height: 429px;
+    background: url('/img/remind1.svg');
+    background-repeat: no-repeat;
+    margin-top: 60px;
+    margin-left: 15px;
+  }
+  .image1 {
+    background: url('/img/remind1.svg');
+    background-repeat: no-repeat;
+  }
+  .image2 {
+    background: url('/img/remind2.svg');
+    background-repeat: no-repeat;
+  }
+  .image3 {
+    background: url('/img/remind3.svg');
+    background-repeat: no-repeat;
+  }
+  .button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 107px;
+    z-index: 1000;
+  }
+  .one {
+    top: 179px;
+  }
+  .two {
+    top: 218px;
+  }
+  .three {
+    top: 257px;
+  }
+  </style>
+  <script>
+  $(function() {
+    $('.one').click(function(){
+      $('.image').removeClass('image2');
+      $('.image').removeClass('image3');
+      $('.image').addClass('image1');
+    });
+    $('.two').click(function(){
+      $('.image').removeClass('image1');
+      $('.image').removeClass('image3');
+      $('.image').addClass('image2');
+    });
+    $('.three').click(function(){
+      $('.image').removeClass('image2');
+      $('.image').removeClass('image1');
+      $('.image').addClass('image3');
+    });
+  })
+  </script>
+<div class='content'>
+  <div class='one button'></div>
+  <div class='two button'></div>
+  <div class='three button'></div>
+  <div class='image'>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<link rel="stylesheet" href="/css/cgm.css">
+<style>
+.circleButton {
+  top: 110px;
+}
+</style>
+
+<div class='content'>
+  <a href='<%- circleButtonHref %>'><div class='circleButton <% if(circleButtonText == 'stop') {%>diamondButton<% }%>'><div><%- circleButtonText%></div></div></a>
+  <a href='/cgm/transmitter'><div class='cgmId'>Transmiter ID</div></a>
+</div>

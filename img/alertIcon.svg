@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>alertIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="alertIcon" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+            <ellipse id="Oval-1" fill="#000000" sketch:type="MSShapeGroup" cx="16" cy="15.5" rx="15" ry="14.5"></ellipse>
+            <path d="M15.8,22.139 C16.519,22.139 17.041,22.664 17.041,23.38 L17.041,23.911 C17.041,24.629 16.519,25.197 15.8,25.197 C15.069,25.197 14.536,24.629 14.536,23.911 L14.536,23.38 C14.536,22.664 15.069,22.139 15.8,22.139 L15.8,22.139 Z M14.561,7.253 C14.536,6.772 14.877,6.398 15.331,6.398 L16.243,6.398 C16.73,6.398 17.041,6.772 17.03,7.253 L16.408,19.296 C16.383,19.633 16.122,19.906 15.8,19.906 C15.455,19.906 15.179,19.633 15.163,19.296 L14.561,7.253 L14.561,7.253 Z" id="Fill-1" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M30.664,15.744 C30.664,24.028 23.949,30.744 15.664,30.744 C7.38,30.744 0.664,24.028 0.664,15.744 C0.664,7.46 7.38,0.744 15.664,0.744 C23.949,0.744 30.664,7.46 30.664,15.744 L30.664,15.744 Z" id="Stroke-2" stroke="#FFFFFF" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,107 @@
+@import "variables.less";
+
+body {
+  display: none;
+}
+.steps {
+}
+
+.steps li {
+  padding: 46px 15px;
+}
+
+.step-text {
+  font-weight: 600;
+  font-size: 14px;
+  float: left;
+  padding-left: 20px;
+  width: 150px;
+}
+
+.step-box {
+  float: left;
+}
+
+.step-box > div {
+  float: left;
+  border-radius: 100px;
+}
+
+.step-box-number {
+  width: 20px;
+  border: 1px solid @color-two;
+  background: @color-two;
+  color: @color-one;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.step-box-line {
+  width: 20px;
+  background: @color-two;
+  height: 2px;
+  margin-top: 9px;
+}
+.step-box-big {
+  width: 50px;
+  border: 2px solid @color-two;
+  height: 50px;
+  margin-top: -16px;
+}
+.step-box-inner {
+  width: 40px;
+  border: 2px solid @color-two;
+  height: 40px;
+  margin: 3px;
+  border-radius: 100px;
+}
+
+.steps {
+  .working {
+    .step-box-big {
+      background: @color-two;
+    }
+  }
+  .disabled {
+    .step-box-number {
+      border: 1px solid @color-three;
+      background: @color-three;
+    }
+    .step-box-line {
+      background: @color-three;
+    }
+    .step-box-big {
+      border: 2px solid @color-three;
+    }
+    .step-text {
+      color: @color-three;
+    }
+    .step-box-inner {
+      border: 2px solid @color-three;
+    }
+  }
+  .done {
+    .step-box-number {
+      border: 1px solid @color-three;
+      background: @color-three;
+    }
+    .step-box-line {
+      background: @color-three;
+    }
+    .step-box-big {
+      border: 2px solid @color-three;
+      background: @color-three;
+      background-image: url('/img/tick.png');
+      background-repeat: no-repeat;
+      background-position: 18px;
+      background-size: 13px;
+    }
+    .step-text {
+      color: @color-three;
+    }
+
+    .step-box-inner {
+      border: 2px solid @color-two;
+    }
+  }
+}

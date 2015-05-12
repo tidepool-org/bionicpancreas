@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="152px" viewBox="0 0 100 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M0,0 L100,0 L100,152 L0,152 L0,0 Z M50.592,140.809896 C24.814,140.809896 10.907,119.688896 10.907,99.8178965 C10.907,73.3548965 45.771,17.7578965 47.252,15.4048965 L50.599,10.1038965 L53.931,15.4068965 C55.42,17.7598965 90.237,73.3558965 90.237,99.8178965 C90.237,119.688896 76.346,140.809896 50.592,140.809896 Z" id="Rectangle-11" fill="#000000" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

@@ -1,0 +1,183 @@
+@import "variables.less";
+
+.edit {
+  display: block;
+}
+
+.view {
+  display: none;
+  width: 312px;
+  position: absolute;
+}
+
+.view-progress-bar {
+  width: 50px;
+  height: 200px;
+  border: 1px solid white;
+  background: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.view-progress-bar-fill {
+  width: 50px;
+  height: 199px;
+  background: black;
+  margin-top: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.view-selection {
+}
+.view-selection-time {
+  background: url('/img/carbEndSelected.svg');
+  width: 80px;
+  height: 50px;
+  background-size: 80px;
+  background-repeat: no-repeat;
+  left: 45px;
+  position: absolute;
+  top: 300px;
+}
+.view-selection-size {
+  background-image: url('/img/carbWhite.svg');
+  background-repeat: no-repeat;
+  background-size: 26px;
+  left: 188px;
+  position: absolute;
+  top: 284px;
+  width: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 59px;
+}
+.view-progress-text {
+  padding-top:150px;
+}
+
+.cMessage {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 20px;
+}
+.cWheel {
+  background: url('/img/carbAll.svg');
+  width: 200px;
+  height: 202px;
+  margin-left: 51px;
+  margin-top: 30px;
+  position: relative;
+  background-size: 200px !important;
+  background-repeat: no-repeat !important;
+}
+
+.cBegining {
+  position: absolute;
+  width: 90px;
+  height: 100px;
+  margin-left: -17px;
+  margin-top: 46px;
+  /*background: rgba(255, 0, 0, 0.41);*/
+}
+
+.cMiddle {
+  position: absolute;
+  width: 166px;
+  height: 83px;
+  margin-left: 21px;
+  margin-top: -6px;
+  /* background: rgba(0, 128, 0, 0.49); */
+}
+
+.cEnd {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-left: 121px;
+  margin-top: 60px;
+  /*background: rgba(0, 57, 255, 0.51);*/
+}
+
+.cSize {
+  padding-top: 30px;
+}
+
+.cSize ul {
+  padding-left: 0px;
+
+  li {
+    float: left;
+    width: 40px;
+    height: 76px;
+    padding: 5px;
+    /* border: 1px solid white; */
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    /* padding-top: 43px; */
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    border-radius: 5px;
+    margin-top: 14px;
+    background-color: black;
+    background-image: url('/img/carbGray.svg');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position-y: 41px;
+    color: gray;
+
+    span {
+      padding-top: 44px;
+      display: block;
+    }
+  }
+}
+.selected {
+  background-image: url('/img/carbBlack.svg') !important;
+  background-color: white !important;
+  color: black !important;
+}
+.enabled {
+  background-image: url('/img/carbWhite.svg') !important;
+  background-color: black !important;
+  color: white !important;
+}
+.tiny {
+  background-position-x: 17px !important;
+  background-size: 15px !important;
+  background-position-y: 37px !important;
+}
+.small {
+  background-position-x: 14px !important;
+  background-size: 20px !important;
+  background-position-y: 33px !important;
+}
+.typical {
+  height: 90px !important;
+  background-position-x: 22px !important;
+  background-size: 28px !important;
+  background-position-y: 39px !important;
+  margin-top: 0px !important;
+  width: 62px !important;
+
+ > span {
+   padding-top: 58px !important;
+ }
+}
+.large {
+  background-position-x: 9px !important;
+  background-size: 31px !important;
+  background-position-y: 24px !important;
+}
+.huge {
+  background-position-x: 4px !important;
+  background-size: 40px !important;
+  background-position-y: 17px !important;
+}
+.ntypical {
+  background-position-x: 16px !important;
+  background-size: 28px !important;
+  background-position-y: 26px !important;
+}

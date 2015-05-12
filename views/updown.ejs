@@ -1,0 +1,46 @@
+<style>
+  .bg-value {
+    position: absolute;
+    top: 70px;
+    left: 31px;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    width: 28px;
+    text-align: right;
+  }
+  .bg-up {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 35px;
+    left: 29px;
+  }
+  .bg-down {
+    width: 30px;
+    height: 30px;
+    top: 97px;
+    position: absolute;
+    left: 29px;
+  }
+</style>
+<script>
+$(function() {
+  $('.bg-up').click(function() {
+    var val = parseInt($('.bg-value').html());
+
+    val++;
+    $('.bg-value').html(val);
+  });
+
+  $('.bg-down').click(function() {
+    var val = parseInt($('.bg-value').html());
+
+    val--;
+    $('.bg-value').html(val);
+  });
+});
+</script>
+<div class='bg-value'><%- startBgValue %></div>
+<div class='bg-up'></div>
+<div class='bg-down'></div>

@@ -1,0 +1,32 @@
+<% layout('layout') -%>
+<style>
+.main {
+  background-image: url('/img/<%- alertImage %>');
+  background-repeat: no-repeat;
+}
+body {
+  margin: 0px;
+}
+.close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 19px;
+  top: 33px;
+}
+.action {
+  position: absolute;
+  width: 215px;
+  /* background: rgba(255, 0, 0, 0.4); */
+  height: 62px;
+  top: 385px;
+  left: 72px;
+  border-radius: 5px;
+}
+.main {
+  width: 360px;
+  height: 590px;
+}
+</style>
+<% include closeAlert %>
+<% include alertAction %>

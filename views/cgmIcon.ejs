@@ -1,0 +1,61 @@
+<style>
+.cgmIcon {
+  position: relative;
+}
+.cgmIcon-background {
+  background-image: url('/img/cgmIcon.svg');
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 53px;
+  z-index: 1;
+  position: relative;
+  background-position-x: 10px;
+}
+.cgm-level {
+  position: absolute;
+  width: 12px;
+  height: 20px;
+  background: white;
+  z-index: 0;
+  left: 11px;
+  top: 3px;
+}
+.calibration-level {
+  position: absolute;
+  width: 12px;
+  height: 25px;
+  background: white;
+  z-index: 0;
+  left: 11px;
+  top: 32px;
+}
+.calibration-alert {
+  position: absolute;
+  background-image: url('/img/alertIcon.svg');
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  top: 29px;
+  left: 16px;
+  z-index: 2;
+  background-size: 21px;
+}
+.cgm-alert {
+  position: absolute;
+background-image: url('/img/alertIcon.svg');
+background-repeat: no-repeat;
+width: 33px;
+height: 33px;
+top: 3px;
+left: 16px;
+z-index: 2;
+background-size: 21px;
+}
+</style>
+<div class='cgmIcon icon'>
+  <div class='cgmIcon-background'></div>
+  <div class='calibration-level'></div>
+  <div class='cgm-level'></div>
+  <div class='calibration-alert'></div>
+  <div class='cgm-alert'></div>
+</div>

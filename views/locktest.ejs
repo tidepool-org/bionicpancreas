@@ -1,0 +1,128 @@
+<% layout('layout') -%>
+<style>
+body {
+  margin: 0;
+}
+.content {
+  position: inherit;
+}
+.main {
+  width: 360px;
+  height: 590px;
+  background: black;
+}
+ul {
+  position: absolute;
+top: 375px;
+left: 46px;
+}
+li {
+  float: left;
+width: 80px;
+height: 80px;
+background-repeat: no-repeat;
+padding: 10px;
+}
+.close {
+  background-image: url('/img/close.svg');
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  display:none;
+  left: 20px;
+}
+.square {
+  background-image: url('/img/square.svg');
+  margin-top: 6px;
+}
+.square:hover {
+  background-image: url('/img/squareFull.svg');
+}
+.circle {
+  background-image: url('/img/circle.svg');
+}
+.circle:hover {
+  background-image: url('/img/circleFull.svg');
+}
+.triangle {
+  background-image: url('/img/triangle.svg');
+  margin-top: 6px;
+}
+.triangle:hover {
+  background-image: url('/img/triangleFull.svg');
+}
+.challenge {
+  padding-top: 200px;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+}
+</style>
+<script>
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex ;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+$(function() {
+  var desired = ['circle', 'triangle', 'square'];
+
+  desired = shuffle(desired);
+
+  $('.orderChallenge').html(desired.toString().replace(',', ' ').replace(',', ' '));
+
+  var sequence = [];
+
+  $('.close').click(function() {
+    sequence = [];
+  });
+  $('li').click(function() {
+
+    sequence.push($(this).attr('class'));
+
+    if(desired.toString() == sequence.toString()) {
+      window.location = '/';
+      return;
+    }
+
+    if (sequence.length > 3) {
+      sequence = [];
+
+      var time = $('.challenge').html();
+      $('.challenge').html('Wrong. Please try again.');
+
+      setTimeout(function() {
+        $('.challenge').html(time);
+      }, 1500);
+    }
+  })
+})
+</script>
+<div class='content'>
+  <div class='close'></div>
+  <div class='challenge'>to unlock press<br><span class='orderChallenge'><span></div>
+  <ul>
+    <li class='square'></li>
+    <li class='circle'></li>
+    <li class='triangle'></li>
+  </ul>
+</div>

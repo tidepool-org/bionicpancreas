@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="38px" viewBox="0 0 12 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>gburstIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="gburstIcon" sketch:type="MSLayerGroup" fill="#000000">
+            <path d="M0.915,28.201 L4.453,26.6 L5.088,18.188 L2.056,20.5 L0.915,28.201" id="Fill-1" sketch:type="MSShapeGroup"></path>
+            <path d="M10.861,20.5 L7.827,18.188 L8.46,26.6 L11.999,28.201 L10.861,20.5" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            <path d="M9.136,5.907 C8.769,4.917 6.714,0.36 6.673,0.256 L6.673,0.249 L6.672,0.254 L6.67,0.247 L6.67,0.26 C6.629,0.362 4.047,4.822 3.663,5.909 C3.398,6.658 3.369,7.799 3.369,7.799 L5.55,7.84 L5.584,7.808 L5.614,7.838 L9.43,7.797 C9.43,7.797 9.412,6.654 9.136,5.907" id="Fill-3" sketch:type="MSShapeGroup"></path>
+            <path d="M6.742,28.145 C7.007,28.567 7.697,29.279 7.697,30.614 C7.697,32.313 6.894,34.23 6.515,34.23 C6.14,34.23 5.331,32.313 5.331,30.614 C5.331,29.279 6.023,28.567 6.289,28.145 C4.784,28.369 3.599,29.418 3.599,32.377 C3.599,35.216 6.452,37.996 6.515,37.996 C6.578,37.996 9.433,35.342 9.433,32.377 C9.433,29.418 8.246,28.371 6.742,28.145" id="Fill-4" sketch:type="MSShapeGroup"></path>
+            <path d="M3.37,7.608 L9.418,7.608 L9.418,25.932 L3.37,25.932 L3.37,7.608 Z" id="Fill-5" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

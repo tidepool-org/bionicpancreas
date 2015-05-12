@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+
+  <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/assets/css/chart.css">
+  <link rel="stylesheet" href="/assets/css/simplegrid.css">
+  <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="/assets/js/d3.js"></script>
+  <script src="/assets/js/underscore.js"></script>
+  <script src="/assets/js/touchSwipe.js"></script>
+  <script src="/assets/json/graph.json"></script>
+  <script src="/assets/js/graph.js"></script>
+  <script src="/assets/js/chart.js"></script>
+  <script src="/assets/js/home.js"></script>
+  <script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+
+  <meta charset="utf-8">
+
+  <title>Home</title>  <meta charset="utf-8">
+</head>
+<body>
+  <div class='main'>
+    <div class='top-bar grid grid-pad'>
+      <a href='/menu'><div class='top-bar-menu top-bar-item'></div></a>
+      <a href='/status'><div class='top-bar-itemGroup'>
+        <div class='top-bar-insulin top-bar-item'>
+          <div class='space'></div>
+          <div class='fill'></div>
+        </div>
+        <div class='top-bar-glucagon top-bar-item'>
+          <div class='space'></div>
+          <div class='fill'></div>
+        </div>
+        <div class='top-bar-infusion top-bar-item'>
+          <div class='fill'></div>
+        </div>
+        <div class='top-bar-cgm top-bar-item'>
+          <div class='fill'></div>
+        </div>
+        <div class='top-bar-battery top-bar-item'>
+          <div class='space'></div>
+          <div class='fill'></div>
+        </div>
+      </div></a>
+    </div>
+    <div>
+      <div class="notifications"></div>
+      <div class="current">
+        <div class="chartToggle"></div>
+        <div class="cgmCurrentValue">120</div>
+        <div class="cgmCurrentUnit">mg/dl</div>
+      </div>
+      <div class="graph"></div>
+    </div>
+    <div class='bottom-bar'>
+      <div class='bottom-bar-icon bottom-carbs'>Carbs</div>
+      <div class='bottom-bar-icon bottom-more'></div>
+      <div class='clear'></div>
+      <div class='bottom-bar-expanded'>
+        <div class='bottom-bar-icon bottom-bar-icon-expanded bottom-gburst'>G burst</div>
+        <div class='bottom-bar-icon bottom-bar-icon-expanded bottom-adjust'>Adjust</div>
+        <a href='/bgEntry'><div class='bottom-bar-icon bottom-bar-icon-expanded bottom-bg'>BG</div></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

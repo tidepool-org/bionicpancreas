@@ -1,0 +1,311 @@
+.main {
+  width:540px;
+  height:887px;
+  margin: 0 auto;
+  background: white;
+}
+
+body {
+  background: rgb(249,249,249);
+  font-family: helvetica;
+  font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  zoom: 0.65;
+}
+
+.text {
+  padding: 100px 0;
+  font-size: 40px;
+}
+
+.title-bar {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.title-bar-action-back {
+  cursor: pointer;
+}
+
+.entry {
+  padding: 10px 0;
+}
+.entry-fullscreen {
+  padding: 185px 10px;
+}
+.entry-erase {
+  padding-top: 25px;
+  font-size: 15px;
+  color: lightgray;
+}
+
+.entry-value {
+  text-align: center;
+  font-size: 40px;
+  height: 50px;
+}
+
+.keypad {
+  padding-bottom: 30px;
+}
+.keypad-row {
+  padding: 10px 0;
+}
+.keypad-key {
+  font-size: 25px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.keypad-key:hover {
+  color: white;
+  cursor: pointer;
+  background: black;
+}
+.keypad-key-hidden,
+.keypad-key-hidden:hover {
+  border: 1px solid transparent !important;
+  background: transparent;
+  cursor: default;
+}
+
+.confirm {
+  padding: 10px;
+  margin: 0 20px !important;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.confirm:hover {
+  color: white;
+  cursor: pointer;
+  background: black;
+}
+
+.disabled,
+.disabled:hover {
+  cursor: default;
+  color: lightgray;
+  border-color: lightgray;
+  background: transparent;
+}
+
+.hide {
+  display: none;
+}
+
+.box
+{
+	margin-top:20px;
+	margin-bottom:20px;
+	max-width:768px;
+	height:300px;
+
+	padding: 10px;
+	background-color: #EEE;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+
+	text-align:center;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 36px;
+
+	overflow:hidden;
+}
+
+
+.svg-label-axis-small, .svg-label-axis-bolus, .svg-label-axis-carb, .svg-label-axis-glucagon, .svg-label-axis-x {
+  font-size: 11px;
+}
+
+.graph {
+  padding-top: 210px;
+}
+
+.menu-list > li {
+  float: left;
+  width: 100%;
+  display: inline;
+  text-align: left;
+}
+
+.menu-list {
+  padding: 20px 0;
+  margin: 0;
+}
+
+.top-bar-back {
+  height: 66px;
+  text-decoration: none;
+  font-size: 30px;
+  color black;
+}
+
+.menu-top-bar {
+  height: 156px;
+}
+
+.menu-list > li {
+  background-repeat: no-repeat;
+  color: #4d4e4c;
+  height: 70px;
+  cursor: pointer;
+}
+
+.menu-list-content {
+  border-bottom: 3px solid #d0d1d0;
+  float: left;
+  height: 100%;
+  font-size: 30px;
+  font-weight: lighter;
+  padding: 15px 0;
+  background-image: url('/assets/img/next.png');
+  width: 75%;
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+  background-position-x: 350px;
+}
+
+.menu-list-icon {
+  width: 25%;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-position-x: 50px;
+  background-position-y: 14px;
+}
+
+.menu-list-infusionSite .menu-list-icon {
+  background-image: url('/assets/img/infusionSite.png');
+}
+
+.menu-list-insulin .menu-list-icon {
+  background-image: url('/assets/img/insulin.png');
+  background-position-x: 60px;
+}
+
+.menu-list-glucagon .menu-list-icon {
+  background-image: url('/assets/img/glucagon.png');
+  background-position-x: 60px;
+}
+
+.menu-list-alarms .menu-list-icon {
+  background-image: url('/assets/img/alarms.png');
+  background-position-y: 25px;
+}
+
+.menu-list-weight .menu-list-icon {
+  background-image: url('/assets/img/weight.png');
+}
+
+.menu-list-settings .menu-list-icon {
+  background-image: url('/assets/img/settings.png');
+}
+
+.menu-list-info .menu-list-icon {
+  background-image: url('/assets/img/info.png');
+}
+
+.menu-list-history .menu-list-icon {
+  background-image: url('/assets/img/history.png');
+}
+
+.menu-list-bgMeter .menu-list-icon {
+  background-image: url('/assets/img/bgMeter.png');
+  background-position-x: 45px;
+}
+
+.menu-list-phone .menu-list-icon {
+  background-image: url('/assets/img/phone.png');
+  background-position-x: 55px;
+}
+
+.menu-list-display .menu-list-icon {
+  background-image: url('/assets/img/display.png');
+}
+
+.menu-list-dateAndTime .menu-list-icon {
+  background-image: url('/assets/img/dateAndTime.png');
+}
+
+.menu-list-language .menu-list-icon {
+  background-image: url('/assets/img/language.png');
+}
+
+.menu-list-units .menu-list-icon {
+  background-image: url('/assets/img/units.png');
+}
+
+.menu-list-safety .menu-list-icon {
+  background-image: url('/assets/img/safety.png');
+}
+
+.menu-list-serialNumber .menu-list-icon {
+  background-image: url('/assets/img/serialNumber.png');
+  background-position-x: 40px;
+}
+
+.menu-list-support .menu-list-icon {
+  background-image: url('/assets/img/support.png');
+}
+
+.menu-list-about .menu-list-icon {
+  background-image: url('/assets/img/about.png');
+}
+
+.menu-list-deviceManual .menu-list-icon {
+  background-image: url('/assets/img/manual.png');
+}
+
+.menu-list-vibration .menu-list-icon {
+  background-image: url('/assets/img/vibration.png');
+}
+
+.menu-list-sound .menu-list-icon {
+  background-image: url('/assets/img/sound.png');
+}
+
+.menu-list-highs .menu-list-icon {
+  background-image: url('/assets/img/highs.png');
+  background-position-x: 55px;
+}
+
+.menu-list-lows .menu-list-icon {
+  background-image: url('/assets/img/lows.png');
+  background-position-x: 55px;
+}
+
+.menu-list-timeOfDay .menu-list-icon {
+  background-image: url('/assets/img/timeOfDay.png');
+}
+
+.menu-list-empty {
+  height: 44px !important;
+  background: #f2f1f0;
+}
+
+.menu-list-last {
+  border-bottom: none;
+}
+
+.menu-top-bar {
+  color: #636463;
+  font-size: 45px;
+  padding: 45px 130px;
+  background: #f2f1f0;
+}

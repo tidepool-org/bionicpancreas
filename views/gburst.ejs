@@ -1,0 +1,101 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<link rel="stylesheet" href="/css/gburst.css">
+
+<script>
+var choosen = '';
+
+$(function() {
+  $('.small').click(function() {
+    $('.gburst li').removeClass('selected');
+    $('.gburst li').removeClass('notSelected');
+
+    //$('.small').addClass('selected');
+    $('.medium').addClass('notSelected');
+    $('.large').addClass('notSelected');
+
+    $('.bottombar-title').removeClass('disabled');
+    choosen = '.small';
+  });
+  $('.medium').click(function() {
+    $('.gburst li').removeClass('selected');
+    $('.gburst li').removeClass('notSelected');
+
+    //$('.medium').addClass('selected');
+    $('.small').addClass('notSelected');
+    $('.large').addClass('notSelected');
+
+    $('.bottombar-title').removeClass('disabled');
+    choosen = '.medium';
+  });
+  $('.large').click(function() {
+    $('.gburst li').removeClass('selected');
+    $('.gburst li').removeClass('notSelected');
+
+    //$('.large').addClass('selected');
+    $('.medium').addClass('notSelected');
+    $('.small').addClass('notSelected');
+
+    $('.bottombar-title').removeClass('disabled');
+    choosen = '.large';
+  });
+});
+
+var deliver = function() {
+  $('.bottombar').remove();
+
+  $('.gburst').append('<div class="progress">Delivering...</div>');
+
+  $(choosen).addClass('selected');
+
+  $('.topbar-backIcon').removeClass('back');
+  $('.topbar-backIcon').addClass('close');
+
+  var indexs = {
+    '.small': 0,
+    '.medium': 1,
+    '.large': 2
+  };
+
+  $('.progress').html('preparing...');
+
+  setTimeout(function() {
+    $('.progress').html('Delivering...');
+
+    $(choosen + ' .bar-fill').animate({
+      height: 0,
+    }, 10000, function() {
+      window.location = '/?glucagon=' + indexs[choosen]
+    });
+  }, 2000);
+
+
+
+};
+
+</script>
+<div class='content'>
+  <div class='gburst'>
+    <ul>
+      <li class='small'>
+        <div class='bar'></div>
+        <div class='bar-fill'></div>
+        <div class='text'>small</div>
+      </li>
+      <li class='medium'>
+        <div class='bar'></div>
+        <div class='bar-fill'></div>
+        <div class='text'>medium</div>
+      </li>
+      <li class='large'>
+        <div class='bar'></div>
+        <div class='bar-fill'></div>
+        <div class='text'>large</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<% include bottombar %>

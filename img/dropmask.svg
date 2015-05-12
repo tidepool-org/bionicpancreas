@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="151px" viewBox="0 0 100 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>dropmask</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dropmask" sketch:type="MSLayerGroup" transform="translate(0.000000, -1.000000)">
+            <path d="M0.14,151.265333 L99.8317647,151.265333 L99.8317647,1.09484058 L0.14,1.09484058 L0.14,151.265333 Z M49.7823529,148.588812 C19.4552941,148.588812 3.09529412,125.326203 3.09529412,103.439304 C3.09529412,74.2905507 44.1105882,13.0532754 45.8529412,10.4626667 L49.7917647,4.62388406 L53.7117647,10.4648696 C55.4623529,13.0554783 96.4235294,74.2927536 96.4235294,103.439304 C96.4235294,125.326203 80.0811765,148.588812 49.7823529,148.588812 L49.7823529,148.588812 Z" id="Fill-1" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M50.0082353,148.343188 C19.6823529,148.343188 3.32117647,125.079478 3.32117647,103.19258 C3.32117647,74.0438261 44.3376471,12.8076522 46.08,10.215942 L50.0176471,4.37715942 L53.9376471,10.2181449 C55.6894118,12.8098551 96.6505882,74.046029 96.6505882,103.19258 C96.6505882,125.079478 80.3070588,148.343188 50.0082353,148.343188 L50.0082353,148.343188 Z" id="Stroke-2" stroke="#FFFFFF" stroke-width="3" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,62 @@
+<% layout('layout') -%>
+
+<script src="/assets/js/chart.js"></script>
+<link rel="stylesheet" href="/css/topbar.css">
+
+<style>
+.main {
+  background: black;
+}
+li {
+  float: left;
+  padding: 10px 6px;
+}
+.lock-status {
+  width: 245px;
+  background: black;
+  height: 81px;
+  border-radius: 5px;
+  margin-left: 93px;
+  padding: 25px 0px;
+}
+.lock-time {
+  color: white;
+  /* float: left; */
+  margin-top: 319px;
+  margin-left: 38px;
+}
+.lock-time-unit {
+  font-size: 30px;
+  font-weight: 400;
+  padding-top: 43px;
+  padding-left: 10px;
+  float: left;
+}
+.lock-time-value {
+  font-size: 70px;
+  font-weight: 400;
+  float: left;
+}
+</style>
+<script>
+$(function() {
+  updateCurrentCGM();
+});
+</script>
+<div class='lock'>
+  <div class='lock-status'>
+    <ul>
+      <li><% include insulinIcon %></li>
+      <li><% include glucagonIcon %></li>
+      <li><% include cgmIcon %></li>
+      <li><% include infusionSetIcon %></li>
+      <li><% include batteryIcon %></li>
+    </ul>
+  </div>
+
+  <% include currentCGM -%>
+  <div class='lock-time'>
+    <div class='lock-time-value'>4:35</div>
+    <div class='lock-time-unit'>pm</div>
+  </div>
+</div>

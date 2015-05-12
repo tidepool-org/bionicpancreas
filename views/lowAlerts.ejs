@@ -1,0 +1,22 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 38px 56px;
+  }
+  .image {
+    position: relative;
+    width: 225px;
+    height: 379px;
+    background: url('/img/lowAlert.svg');
+    background-repeat: no-repeat;
+  }
+</style>
+<div class='content'>
+  <div class='image'>
+    <div class='bg'><%- include updown %></div>
+    <%- include upDownTime %>
+  </div>
+</div>

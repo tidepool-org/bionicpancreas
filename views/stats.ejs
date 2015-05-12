@@ -1,0 +1,33 @@
+<% layout('layout') -%>
+
+<% include topbar %>
+
+<style>
+  .content {
+    padding: 15px 13px;
+  }
+  .image {
+    position: relative;
+    width: 289px;
+    height: 429px;
+    background: url('/img/statsToday.svg');
+    background-repeat: no-repeat;
+
+  }
+  .week {
+    background: url('/img/statsThisWeek.svg');
+    background-repeat: no-repeat;
+
+  }
+  </style>
+  <script>
+  $(function() {
+    $('.image').click(function(){
+      $(this).toggleClass('week');
+    })
+  })
+  </script>
+<div class='content'>
+  <div class='image'>
+  </div>
+</div>

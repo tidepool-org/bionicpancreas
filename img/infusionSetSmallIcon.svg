@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="48px" viewBox="0 0 28 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>infusionSetSmallIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="infusionSetSmallIcon" sketch:type="MSLayerGroup" fill="#000000">
+            <path d="M25.879,44.38 C16.957,44.38 16.412,34.36 16.412,28.063 L16.412,21.846 L15.125,21.846 L15.125,28.063 C15.125,39.765 18.371,45.667 25.879,45.667 C26.234,45.667 26.522,45.379 26.522,45.023 C26.522,44.668 26.234,44.38 25.879,44.38" id="Fill-1" sketch:type="MSShapeGroup"></path>
+            <path d="M25.746,46.676 C15.657,46.676 14.15,36.112 14.15,29.815 L14.15,21.846 L12.864,21.846 L12.864,29.815 C12.864,41.517 17.439,47.962 25.746,47.962 C26.102,47.962 26.39,47.675 26.39,47.319 C26.39,46.964 26.102,46.676 25.746,46.676" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            <path d="M14.482,0.378 C7.022,0.378 0.977,6.425 0.977,13.885 C0.977,20.449 5.64,25.888 11.844,27.105 L11.844,21.665 C8.638,20.556 6.33,17.521 6.33,13.939 C6.33,9.414 9.995,5.75 14.518,5.75 C19.039,5.75 22.706,9.414 22.706,13.939 C22.706,17.453 20.486,20.443 17.375,21.604 L17.375,27.051 C23.438,25.724 27.987,20.348 27.987,13.885 C27.987,6.425 21.94,0.378 14.482,0.378" id="Fill-3" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

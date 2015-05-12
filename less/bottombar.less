@@ -1,0 +1,35 @@
+@import "variables.less";
+
+.bottombar-roundedTop {
+  width: 338px;
+  height: 5px;
+  background: black;
+  top: 523px;
+  position: absolute;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  z-index: 100;
+}
+
+.bottombar {
+  position: absolute;
+  background: white;
+  width: 338px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  top: 523px;
+  letter-spacing: 2px;
+
+  .disabled {
+    background: @color-three;
+  }
+}
+
+.bottombar-title {
+  padding: 10px;
+  text-align: center;
+  background: @color-one;
+  border-radius: 5px;
+}

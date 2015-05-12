@@ -1,0 +1,130 @@
+body {
+  background: rgb(249,249,249);
+  font-family: helvetica;
+  font-size: 14px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 0;
+  width: 100%;
+  height: 100%;
+  zoom: 0.65;
+  color: #636463;
+}
+
+.main {
+  width:540px;
+  height:887px;
+  margin: 0 auto;
+  background: white;
+  padding: 15px;
+}
+
+.back {
+  background-image: url('/assets/img/home.png');
+  background-color: #cbcccb;
+  border-radius: 10px;
+  width: 111px;
+  margin-right: 15px;
+  height: 125px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: 30px;
+}
+
+.title {
+  background: #cbcccb;
+border-top-left-radius: 10px;
+width: 414px;
+height: 145px;
+float: left;
+border-top-right-radius: 10px;
+}
+
+.title > div {
+  color: #636463;
+  font-size: 45px;
+  padding: 45px 70px;
+}
+.clear {
+  clear: both;
+}
+.content {
+  background: #cbcccb;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 540px;
+  height: 742px;
+}
+
+li  {
+  padding: 23px;
+  border-bottom: 2px solid #a5a6a5;
+  padding-left: 100px;
+}
+
+ul {
+  list-style: none;
+/* margin: 10px; */
+padding: 28px;
+padding-top: 0px;
+margin-top: 0px;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+.list-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #4d4e4c;
+  padding-bottom: 10px;
+}
+
+.list-line {
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.power {
+  background-image: url('/assets/img/batteryTopBar.png');
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+  background-position-x: 30px;
+}
+
+.infusion {
+  background-image: url('/assets/img/infusionSiteTopBar.png');
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position-y: 30px;
+background-position-x: 20px;
+
+}
+
+.insulin {
+  background-image: url('/assets/img/insulinTopBar.png');
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+background-position-x: 30px;
+
+}
+.cgm {
+  background-image: url('/assets/img/cgmTopBar.png');
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position-y: 40px;
+background-position-x: 30px;
+
+}
+.glucagon {
+  background-image: url('/assets/img/glucagonTopBar.png');
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+background-position-x: 30px;
+
+}

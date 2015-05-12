@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="47px" viewBox="0 0 28 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>phoneSmallIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M25.288,0.198 L3.08,0.198 C1.858,0.198 0.868,1.192 0.868,2.418 L0.868,44.582 C0.868,45.808 1.858,46.802 3.08,46.802 L25.289,46.802 C26.509,46.802 27.5,45.808 27.5,44.582 L27.5,2.418 C27.5,1.193 26.509,0.198 25.288,0.198 L25.288,0.198 Z M5.29,4.64 L23.077,4.64 L23.077,37.924 L5.29,37.924 L5.29,4.64 Z M14.184,44.582 C12.959,44.582 11.966,43.587 11.966,42.362 C11.966,41.138 12.959,40.144 14.184,40.144 C15.409,40.144 16.399,41.138 16.399,42.362 C16.399,43.591 15.409,44.582 14.184,44.582 L14.184,44.582 Z" id="phoneSmallIcon" fill="#000000" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

@@ -1,0 +1,73 @@
+<% layout('layout') -%>
+
+<% include menubar %>
+
+<link rel="stylesheet" href="/css/menulist.css">
+<style>
+.vibrate-toggle {
+  background: url('/img/toggleOn.png');
+  background-repeat: no-repeat;
+  width: 83px;
+  height: 50px;
+  position: absolute;
+  left: 171px;
+  top: 15px;
+}
+.vibrate-toggleOff {
+  background: url('/img/toggleOff.png');
+  background-repeat: no-repeat;
+}
+</style>
+<script>
+$(function() {
+  $('.vibrate-toggle').click(function() {
+    $('.vibrate-toggle').toggleClass('vibrate-toggleOff');
+  })
+});
+</script>
+<ul class='menu-list'>
+  <li class='menu-list-vibration'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content'>vibration <div class='vibrate-toggle'></div></div>
+    <div class='clear'></div>
+  </li>
+  <li class='menu-list-sound'>
+    <a href='/sound'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content menu-list-last'>sound</div>
+    <div class='clear'></div>
+    </a>
+  </li>
+  <div class='menu-list-space'></div>
+  <li class='menu-list-highalerts'>
+    <a href='/highalerts'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content'>high BG's</div>
+  </a>
+  </li>
+  <li class='menu-list-lowalerts'>
+    <a href='/lowalerts'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content  menu-list-last'>low BG's</div>
+  </a>
+  </li>
+  <div class='menu-list-space'></div>
+  <li class='menu-list-lowinsulin'>
+    <a href='/lowinsulin'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content'>low insulin</div>
+  </a>
+  </li>
+  <li class='menu-list-lowglucagon'>
+    <a href='/lowglucagon'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content'>low glucaon</div>
+  </a>
+  </li>
+  <li class='menu-list-alertInfusionSite'>
+    <a href='/alertInfusionSite'>
+    <div class='menu-list-icon'></div>
+    <div class='menu-list-content  menu-list-last'>infusion site</div>
+  </a>
+  </li>
+</ul>

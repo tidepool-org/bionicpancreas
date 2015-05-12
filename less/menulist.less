@@ -1,0 +1,236 @@
+@import "variables.less";
+
+.menu-list {
+  padding-top: 10px;
+}
+.menu-list > li {
+  background-repeat: no-repeat;
+  color: black;
+  height: 49px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-list-space {
+  height: 15px;
+  background: gray;
+}
+
+.menu-list-last {
+  border-bottom: none;
+}
+
+.menu-list-content {
+  border-bottom: 1px solid gray;
+  /* float: left; */
+  font-weight: lighter;
+  padding: 15px 0 10px 0;
+  background-image: url('/img/forward.svg');
+  background-repeat: no-repeat;
+  background-position-y: 16px;
+  background-position-x: 220px;
+  background-size: 10px;
+  position: absolute;
+  width: 270px;
+  left: 86px;
+}
+
+.menu-list-big {
+  height: 85px !important;
+}
+
+.menu-list-big .menu-list-content {
+  padding: 7px 0 10px 0;
+  border-bottom: none;
+  background: none;
+}
+
+.menu-list-description {
+  border-bottom: 1px solid gray;
+  font-weight: lighter;
+  padding: 15px 0 17px 0;
+  background-size: 10px;
+  position: absolute;
+  width: 270px;
+  left: 86px;
+  top: 25px;
+  color: gray;
+}
+.menu-list-icon {
+  width: 25%;
+height: 100%;
+position: absolute;
+  left: -5px;
+background-repeat: no-repeat;
+background-size: 23px;
+background-position-x: 30px;
+background-position-y: 12px;
+}
+
+.menu-list-infusionSite .menu-list-icon {
+  background-image: url('/img/infusionSetSmallIcon.svg');
+  background-position-x: 32px;
+  background-size: 18px;
+  background-position-y: 10px;
+}
+
+.menu-list-insulin .menu-list-icon {
+  background-image: url('/img/insulinSmallIcon.svg');
+background-position-x: 37px;
+background-size: 10px;
+background-position-y: 8px;
+}
+
+.menu-list-glucagon .menu-list-icon {
+  background-image: url('/img/glucagonSmallIcon.svg');
+background-position-x: 37px;
+background-size: 10px;
+background-position-y: 8px;
+}
+
+.menu-list-alarms .menu-list-icon {
+  background-image: url('/img/alertsSmallIcon.svg');
+background-position-x: 29px;
+background-position-y: 19px;
+}
+
+.menu-list-weight .menu-list-icon {
+  background-image: url('/img/weightSmallIcon.svg');
+}
+
+.menu-list-settings .menu-list-icon {
+  background-image: url('/img/settingsSmallIcon.svg');
+}
+
+.menu-list-info .menu-list-icon {
+  background-image: url('/img/infoSmallIcon.svg');
+}
+
+.menu-list-history .menu-list-icon {
+  background-image: url('/img/historySmallIcon.svg');
+}
+
+.menu-list-bgMeter .menu-list-icon {
+  background-image: url('/img/bgmSmallIcon.svg');
+  background-position-x: 45px;
+}
+
+.menu-list-cgm .menu-list-icon {
+  background-image: url('/img/cgmSmallIcon.svg');
+  background-position-x: 38px;
+  background-size: 10px;
+  background-position-y: 8px;
+}
+
+.menu-list-phone .menu-list-icon {
+  background-image: url('/img/phoneSmallIcon.svg');
+  background-position-x: 47px;
+  background-size: 17px;
+  background-position-y: 8px;
+}
+
+.menu-list-display .menu-list-icon {
+  background-image: url('/img/fontSmallIcon.svg');
+  background-position-x: 44px;
+  background-size: 20px;
+  background-position-y: 16px;
+}
+
+.menu-list-datetime .menu-list-icon {
+  background-image: url('/img/datetimeSmallIcon.svg');
+  background-position-x: 43px;
+}
+
+.menu-list-language .menu-list-icon {
+  background-image: url('/img/languageSmallIcon.svg');
+  background-size: 17px;
+  background-position-x: 45px;
+  background-position-y: 15px;
+}
+
+.menu-list-units .menu-list-icon {
+  background-image: url('/img/unitsSmallIcon.svg');
+  background-position-x: 40px;
+  background-size: 25px;
+}
+
+.menu-list-childlock .menu-list-icon {
+  background-image: url('/img/childLockSmallIcon.svg');
+  background-position-x: 42px;
+  background-size: 22px;
+}
+
+.menu-list-safety .menu-list-icon {
+  background-image: url('/img/childlockSmallIcon.svg');
+}
+
+.menu-list-length .menu-list-icon {
+  background-image: url('/img/lengthSmallIcon.svg');
+  background-position-x: 41px;
+  background-position-y: 10px;
+}
+
+.menu-list-serialnumber .menu-list-icon {
+  background-image: url('/img/barcodeSmallIcon.svg');
+  background-position-x: 25px;
+  background-size: 30px;
+  background-position-y: 13px;
+}
+
+.menu-list-support .menu-list-icon {
+  background-image: url('/img/supportSmallIcon.svg');
+}
+
+.menu-list-about .menu-list-icon {
+  background-image: url('/img/aboutSmallIcon.svg');
+}
+
+.menu-list-devicemanual .menu-list-icon {
+  background-image: url('/img/manualSmallIcon.svg');
+}
+
+.menu-list-softwareversion .menu-list-icon {
+  background-image: url('/img/versionSmallIcon.svg');
+}
+
+.menu-list-vibration .menu-list-icon {
+  background-image: url('/img/vibrateSmallIcon.svg');
+}
+.menu-list-vibration .menu-list-content {
+  background: none;
+}
+.menu-list-sound .menu-list-icon {
+  background-image: url('/img/soundSmallIcon.svg');
+}
+
+.menu-list-highs .menu-list-icon {
+  background-image: url('/img/highAlertsSmallIcon.svg');
+  background-position-x: 55px;
+}
+
+.menu-list-lows .menu-list-icon {
+  background-image: url('/img/lowAlert.svg');
+  background-position-x: 55px;
+}
+
+.menu-list-highalerts {
+  background-image: url('/img/highSmallIcon.svg');
+  background-position-x: 22px;
+  background-size: 18px;
+  background-position-y: 9px;
+}
+
+.menu-list-lowalerts {
+  background-image: url('/img/lowSmallIcon.svg');
+  background-position-x: 22px;
+  background-size: 18px;
+  background-position-y: 9px;
+}
+
+.menu-list-timeOfDay .menu-list-icon {
+  background-image: url('/img/timeOfDay.png');
+}
+
+.menu-list-last {
+  border-bottom: none;
+}

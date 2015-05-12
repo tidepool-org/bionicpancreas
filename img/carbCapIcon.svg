@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="24px" viewBox="0 0 23 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>carbCapIcon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="carbCapIcon" sketch:type="MSLayerGroup">
+            <path d="M22.978,11.606 C22.978,5.266 17.84,0.127 11.5,0.127 C5.161,0.127 0.023,5.266 0.023,11.606 C0.023,17.944 5.161,23.083 11.5,23.083 C17.84,23.083 22.978,17.944 22.978,11.606" id="Fill-1" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <text id="C" sketch:type="MSTextLayer" font-family=".Lucida Grande UI" font-size="15" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.8538" y="16.8656625">C</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
