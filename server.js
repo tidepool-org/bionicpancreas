@@ -477,8 +477,8 @@ app.get('/weight/remind', function(req, res) {
 });
 
 
-http.listen(8060, function () {
-  console.log('listening on *:8060');
+http.listen(8070, function () {
+  console.log('listening on *:8087');
 });
 
 io.on('connection', function(socket){
