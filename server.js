@@ -477,7 +477,7 @@ app.get('/weight/remind', function(req, res) {
 });
 
 
-http.listen(8070, function () {
+http.listen(8087, function () {
   console.log('listening on *:8087');
 });
 
