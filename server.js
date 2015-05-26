@@ -23,6 +23,10 @@ app.get('/list', function(req, res) {
   res.sendfile(__dirname + '/assets/html/list.html');
 });
 
+app.get('/levels/offline', function(req, res) {
+  res.send({"battery":50,"cgmLife":5,"calibration":420,"insulin":50,"glucagon":60,"oclusion":0,"cgmTransmitterBatteryLow":0,"cgmOffline":0,"infusionSite":3});
+});
+
 var levels = {
   battery: 50,
   cgmLife: 5,

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="43px" height="36px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>statsicon-small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="splashScreen" sketch:type="MSLayerGroup" transform="translate(-2936.000000, 0.000000)" fill="#000000">
+            <g id="statsicon-small" transform="translate(2936.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <path d="M0.73,20.679 L10.141,20.679 L10.141,35.625 L0.73,35.625 L0.73,20.679 Z" id="Fill-1"></path>
+                <path d="M15.632,10.713 L26.612,10.713 L26.612,35.626 L15.632,35.626 L15.632,10.713 Z" id="Fill-2"></path>
+                <path d="M32.102,0.333 L42.298,0.333 L42.298,35.626 L32.102,35.626 L32.102,0.333 Z" id="Fill-3"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -206,10 +206,16 @@ function save(obj) {
   }
 }
 
+var offlineLevels = {"battery":50,"cgmLife":5,"calibration":420,"insulin":50,"glucagon":60,"oclusion":0,"cgmTransmitterBatteryLow":0,"cgmOffline":0,"infusionSite":3};
 // Do something with your data. // get data from server
 function load(callback) {
   $.getJSON('/levels', function(levels, status) {
-    callback(status != 'success', levels);
+    if (navigator.online) {
+      callback(status != 'success', levels);
+    } else {
+      callback(false, offlineLevels);
+    }
+
   });
 }
 
