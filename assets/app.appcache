@@ -82,7 +82,7 @@ CACHE:
 /img/childLockSmallIcon.svg
 #/img/childlockTitleIcon.svg
 /img/dateTimeTitleIcon.svg
-/img/datetimeSmallIcon.svg
+#/img/datetimeSmallIcon.svg
 /img/fontSmallIcon.svg
 /img/fontTitleIcon.svg
 /img/forward.svg
