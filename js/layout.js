@@ -237,4 +237,8 @@ $(function() {
 
     startTimer = timeout();
   });
+
+  window.applicationCache.addEventListener('cached',function(e) {
+    alert('Application Cached and ready for offline use');
+  }, false);
 })

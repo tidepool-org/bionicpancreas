@@ -1,5 +1,5 @@
 CACHE MANIFEST
-#version 1.0 5-26-2015
+#version 1.1
 
 CACHE:
 
@@ -48,6 +48,9 @@ CACHE:
 
 #style sheets
 /css/layout.css
+/css/adjust.css
+/css/carb.css
+/css/gburst.css
 /css/menubar.css
 /css/menulist.css
 /css/topbar-icons.css
@@ -59,6 +62,7 @@ CACHE:
 
 #style sheet images
 /img/12toggle.svg
+/img/adjsutOnlineBackground.svg
 /img/6toggle.svg
 /img/adjustTitleIcon.svg
 /img/alertIcon.svg
